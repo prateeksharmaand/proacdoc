@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Created by Efendi Hariyadi on 21/07/22, 2:02 PM
+  ~ Copyright (c) 2022 . All rights reserved.
+  ~ Last modified 07/07/22, 10:47 AM
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/llAddFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/_82sdp"
+            android:layout_height="@dimen/_92sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/add_record" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_10sdp"
+            android:fontFamily="@font/poppinsmedium"
+            android:includeFontPadding="false"
+            android:text="@string/medical_documents"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:fontFamily="@font/poppinsregular"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/organize_your_medical_documents_with_smart_tags_and_find_them_easily_across_symptoms_medicines_health_parameters_and_more"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_11sdp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/PostNow"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_10sdp"
+
+            android:layout_marginBottom="@dimen/_50sdp"
+
+            android:elevation="@dimen/_3sdp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="@string/add_first_medical_document"
+            android:textColor="?attr/colorOnPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:fontFamily="@font/poppinsregular"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/refrain_from_uploading_non_medical_documents_these_files_may_get_deleted"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_9sdp" />
+
+        <ImageView
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:src="@drawable/refrain" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:fontFamily="@font/poppinsregular"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/tncdata"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_9sdp" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedRecords"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.card.MaterialCardView
+                style="?attr/materialCardViewElevatedStyle"
+                app:cardElevation="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/lightt_blue_bg">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="@string/smart_reports"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinsregular"
+                            android:text="@string/uploaded_report_are_scanned_to_generate_meaningful_shereable_graphs_of_your_health_vitals"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:layout_weight="0.2"
+
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+
+                            android:src="@drawable/vitals_banner_icon" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:scrollbars="none"
+
+             />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.nambimobile.widgets.efab.ExpandableFabLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+
+        android:layout_alignParentBottom="true">
+
+
+        <com.nambimobile.widgets.efab.Overlay
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:overlay_color="#cc000000"
+            app:overlay_orientation="portrait" />
+
+        <com.nambimobile.widgets.efab.ExpandableFab
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+
+            android:layout_marginBottom="@dimen/_75sdp"
+            app:efab_color="?attr/colorSecondary"
+            app:efab_icon="@drawable/ic_baseline_add_24"
+            app:efab_iconAnimationRotationDeg="0"
+            app:efab_orientation="portrait" />
+
+        <com.nambimobile.widgets.efab.FabOption
+            android:id="@+id/AddCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:fab_color="?attr/colorSecondary"
+            app:fab_icon="@drawable/ic_baseline_whtat_is_24"
+            app:fab_orientation="portrait"
+            app:label_text="Image" />
+
+
+        <com.nambimobile.widgets.efab.FabOption
+            android:id="@+id/AddPDF"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:onClick="add_Interest_Hobiles_post_click"
+            app:fab_color="?attr/colorPrimary"
+            app:fab_icon="@drawable/ic_baseline_trending_24"
+            app:fab_orientation="portrait"
+            app:label_text="PDF File" />
+
+
+    </com.nambimobile.widgets.efab.ExpandableFabLayout>
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:indeterminate="true"
+        android:progressTint="@color/colorAccent"
+        android:visibility="gone" />
+
+</RelativeLayout>

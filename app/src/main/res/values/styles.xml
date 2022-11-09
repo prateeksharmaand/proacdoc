@@ -1,0 +1,40 @@
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Created by Efendi Hariyadi on 28/06/22, 5:25 PM
+  ~ Copyright (c) 2022 . All rights reserved.
+  ~ Last modified 28/06/22, 5:03 PM
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<resources>
+    <!-- Base application theme. -->
+
+
+
+    <style name="MySeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressBackgroundTint">#6DA6D0</item>
+        <item name="android:progressTint">#1389E0</item>
+        <item name="android:colorControlActivated">#c51162</item>
+    </style>
+
+
+    <style name="TransparentDialog" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="android:windowCloseOnTouchOutside">true</item>
+
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="TagChip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:elevation">4dp</item>
+        <item name="chipBackgroundColor">@color/chips_bg</item>
+        <item name="checkedIconTint">@android:color/white</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+
+</resources>

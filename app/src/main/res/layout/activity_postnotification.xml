@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Created by Efendi Hariyadi on 21/07/22, 2:02 PM
+  ~ Copyright (c) 2022 . All rights reserved.
+  ~ Last modified 07/07/22, 5:47 PM
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+>
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            app:titleCentered="true"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:title="Featured Post"
+            app:titleTextColor="?attr/colorOnPrimary"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="match_parent"
+        android:id="@+id/progressBar"
+        android:layout_below="@+id/appBar"
+        android:visibility="gone"
+
+        android:indeterminate="true"
+        android:layout_height="wrap_content" />
+
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+        android:layout_below="@+id/appBar"
+        android:layout_width="match_parent"
+        android:id="@+id/cardView"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+
+
+        app:cardCornerRadius="@dimen/_15sdp"
+        app:elevation="@dimen/_4sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="?attr/selectableItemBackground"
+            android:orientation="vertical"
+
+            android:padding="@dimen/_8sdp">
+
+            <ImageView
+                android:id="@+id/imgpostType"
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_gravity="right"
+                android:src="@drawable/roundicon"
+                app:tint="@android:color/holo_orange_dark" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/ic_user" />
+
+                <TextView
+                    android:fontFamily="@font/poppinsregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Posted By: "
+
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:fontFamily="@font/poppinsregular"
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:capitalize="words"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:fontFamily="@font/poppinsregular"
+                    android:id="@+id/txtDateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:gravity="right"
+                    android:text="sqssss"
+
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="@dimen/_10sdp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:fontFamily="@font/poppinsmedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+
+
+                android:textSize="@dimen/_12sdp" />
+
+            <ImageView
+                android:id="@+id/imgPost"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+
+
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <info.androidhive.fontawesome.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:text="@string/fa_eye"
+
+
+                        android:textSize="@dimen/_18sdp"
+                        app:solid_icon="true" />
+
+                    <TextView
+                        android:id="@+id/txtViews"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:fontFamily="@font/poppinsregular"
+                        android:textColor="?attr/colorOnSurface"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <info.androidhive.fontawesome.FontTextView
+                        android:id="@+id/txtLike"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/fa_comments_solid"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_18sdp"
+                        app:solid_icon="true" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="Reply"
+                        android:fontFamily="@font/poppinsregular"
+                        android:textColor="?attr/colorOnSurface"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true">
+
+                    <info.androidhive.fontawesome.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+
+                        android:text="@string/fa_share_alt_solid"
+
+
+                        android:textSize="@dimen/_18sdp"
+                        app:solid_icon="true" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="Share"
+                        android:fontFamily="@font/poppinsregular"
+                        android:textColor="?attr/colorOnSurface"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="Featured Tags"
+                    android:fontFamily="@font/poppinsmedium"
+
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="gone"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/lvSubCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

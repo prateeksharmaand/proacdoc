@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Created by Efendi Hariyadi on 28/06/22, 10:44 PM
+  ~ Copyright (c) 2022 . All rights reserved.
+  ~ Last modified 28/06/22, 5:03 PM
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    style="?attr/materialCardViewFilledStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:clickable="true"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="@dimen/_10sdp"
+
+    app:cardElevation="@dimen/_5sdp"
+
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+
+
+        >
+
+        <ImageView
+            app:tint="#7A798F"
+            android:id="@+id/img"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"></ImageView>
+
+        <TextView
+
+            android:id="@+id/testName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/grey_bg_rounded"
+            android:id="@+id/testN0Data"
+            android:paddingLeft="@dimen/_10sdp"
+
+            android:paddingRight="@dimen/_10sdp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:gravity="center"
+            android:text="No Data"
+            android:textColor="#B1BCBE"
+            android:textSize="@dimen/_10sdp"
+            />
+        <TextView
+            android:visibility="gone"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/red_bg_rounded"
+            android:id="@+id/testoutofRange"
+            android:paddingLeft="@dimen/_10sdp"
+
+            android:paddingRight="@dimen/_10sdp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:gravity="center"
+            android:text="No Data"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_10sdp"
+            />
+        <TextView
+            android:visibility="gone"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/green_bg_rounded"
+            android:id="@+id/testinRange"
+            android:paddingLeft="@dimen/_10sdp"
+
+            android:paddingRight="@dimen/_10sdp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:gravity="center"
+
+            android:textColor="@color/green"
+            android:textSize="@dimen/_10sdp"
+            />
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

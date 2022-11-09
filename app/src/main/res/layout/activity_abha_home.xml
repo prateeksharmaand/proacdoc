@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?><!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Created by Efendi Hariyadi on 10/08/22, 11:22 AM
+  ~ Copyright (c) 2022 . All rights reserved.
+  ~ Last modified 10/08/22, 11:22 AM
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="health.care.ai.ui.labvitalstrend.ViewLabVitalsTrendActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+
+        app:liftOnScroll="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_scrollFlags="scroll"
+            app:title="@string/register_abha"
+
+
+            app:titleTextColor="?attr/colorOnPrimary"
+
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/imgtop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_250sdp"
+                android:adjustViewBounds="false"
+                android:scaleType="centerCrop"
+
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/abha"
+                app:lottie_scale="5"
+                app:lottie_speed="1"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:fontFamily="@font/poppinsmedium"
+
+                android:gravity="center"
+                android:text="@string/login_with_abha_and_link_with_kae_profile_to_access_all_your_medical_records"
+                android:textSize="@dimen/_12sdp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCreateAbha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_50sdp"
+
+                android:clickable="false"
+
+                android:elevation="@dimen/_3sdp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="@string/create_abha"
+                android:textColor="?attr/colorOnPrimary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:fontFamily="@font/poppinsmedium"
+
+                android:gravity="center"
+                android:text="@string/already_have_abha"
+                android:textSize="@dimen/_12sdp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:backgroundTint="@color/green"
+                android:elevation="@dimen/_3sdp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="@string/link_your_abha"
+                android:textColor="?attr/colorOnPrimary" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_280sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/abhabottom" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBar"
+
+        android:indeterminate="true"
+        android:progressTint="@color/colorAccent"
+        android:visibility="gone" />
+
+</RelativeLayout>

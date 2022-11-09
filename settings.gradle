@@ -1,0 +1,4 @@
+include ':app'
+rootProject.name = "Simpel Desa"
+include ':heartrateometer'
+include ':heartrateometer'

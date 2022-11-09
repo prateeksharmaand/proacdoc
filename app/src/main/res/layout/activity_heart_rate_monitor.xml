@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?><!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Created by Efendi Hariyadi on 09/08/22, 5:39 PM
+  ~ Copyright (c) 2022 . All rights reserved.
+  ~ Last modified 09/08/22, 5:39 PM
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="health.care.ai.ui.heartratemonitor.HeartRateMonitorActivity">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/imgtop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_below="@+id/appBar"
+
+        android:adjustViewBounds="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/hbtop"
+        app:lottie_speed="1"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:liftOnScroll="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            app:subtitle="@string/beta"
+            app:subtitleCentered="true"
+            app:title="@string/heart_rate"
+            app:titleCentered="true"
+            app:titleTextColor="?attr/colorOnPrimary"
+
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardplacefinger"
+
+        style="?attr/materialCardViewElevatedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgtop"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardBackgroundColor="@color/lightt_yellow_bg"
+        app:cardElevation="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="@string/place_your_index_finger_gently_on_camera_press_slightly_and_wait_for_30_seconds"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:gravity="center"
+
+                android:orientation="horizontal">
+
+
+                <info.androidhive.fontawesome.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_4sdp"
+
+                    android:text="@string/fa_info_circle_solid"
+                    android:textColor="@color/fui_bgTwitter"
+
+                    android:textSize="@dimen/_20sdp"
+                    app:solid_icon="true" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <RelativeLayout
+
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBar"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <SurfaceView
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:visibility="visible" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <com.airbnb.lottie.LottieAnimationView
+
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+
+                android:adjustViewBounds="true"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/hbl"
+                app:lottie_speed="1"
+                tools:ignore="ContentDescription" />
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/circularProgressBar"
+                android:layout_width="@dimen/_170sdp"
+                android:layout_height="@dimen/_170sdp"
+
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:cpb_background_progressbar_color="@color/unicorn_grey"
+
+                app:cpb_background_progressbar_width="@dimen/_12sdp"
+                app:cpb_progress_direction="to_right"
+                app:cpb_progress_max="40"
+                app:cpb_progressbar_color="#7CFC00"
+                app:cpb_progressbar_width="@dimen/_12sdp"
+                app:cpb_round_border="false" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtBPM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="14"
+                    android:textColor="@color/unicorn_white"
+                    android:textSize="@dimen/_30sdp" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="@string/beats_per_minute"
+                    android:textColor="@color/unicorn_white"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+
+            app:lottie_loop="true"
+            app:lottie_speed="1"
+            tools:ignore="ContentDescription" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardplacefingerProgress"
+            style="?attr/materialCardViewElevatedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_10sdp"
+            app:cardBackgroundColor="@color/lightt_yellow_bg"
+            app:cardElevation="@dimen/_5sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="@string/measurement_in_progress_keep_your_device_steady"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

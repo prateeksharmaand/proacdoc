@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?><!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Created by Efendi Hariyadi on 10/08/22, 11:22 AM
+  ~ Copyright (c) 2022 . All rights reserved.
+  ~ Last modified 10/08/22, 11:22 AM
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="health.care.ai.ui.labvitalstrend.ViewLabVitalsTrendActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+
+        app:liftOnScroll="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_scrollFlags="scroll"
+            app:title="@string/create_abha"
+
+
+            app:titleTextColor="?attr/colorOnPrimary"
+
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBar"
+        android:layout_margin="@dimen/_10sdp"
+        android:elevation="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/llMobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+
+                <EditText
+
+                    android:id="@+id/etfirst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:hint="Enter first name"
+
+
+                    android:textColor="?attr/colorOnSurface"
+                    android:textColorHint="?attr/colorOnSurface"
+
+                    android:textSize="@dimen/_12sdp"
+                    app:backgroundTint="?attr/colorPrimary" />
+
+                <EditText
+
+                    android:id="@+id/etlast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:hint="Enter last name"
+
+
+                    android:textColor="?attr/colorOnSurface"
+                    android:textColorHint="?attr/colorOnSurface"
+
+                    android:textSize="@dimen/_12sdp"
+                    app:backgroundTint="?attr/colorPrimary" />
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etGealthid"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_weight="0.80"
+                        android:hint="Enter Health Id"
+
+
+                        android:textColor="?attr/colorOnSurface"
+                        android:textColorHint="?attr/colorOnSurface"
+
+                        android:textSize="@dimen/_12sdp"
+                        app:backgroundTint="?attr/colorPrimary" />
+
+                    <TextView
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+                        android:text="@string/ndhm"></TextView>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:hint="Enter Password"
+
+
+                    android:textColor="?attr/colorOnSurface"
+                    android:textColorHint="?attr/colorOnSurface"
+
+                    android:textSize="@dimen/_12sdp"
+                    app:backgroundTint="?attr/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/txtError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCreateAbha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_50sdp"
+
+                android:clickable="true"
+
+                android:elevation="@dimen/_3sdp"
+                android:focusable="true"
+                android:fontFamily="@font/poppinsregular"
+                android:text="@string/mobilecontinue"
+                android:textColor="?attr/colorOnPrimary" />
+            <LinearLayout
+
+                android:id="@+id/lvBottom"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="@dimen/_52sdp"
+                    android:layout_height="@dimen/_52sdp"
+                    android:layout_gravity="center"
+
+                    android:src="@drawable/refrain" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/tncdata"
+                    android:textColor="@color/unicorn_black_70"
+                    android:textSize="@dimen/_9sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBar"
+
+        android:indeterminate="true"
+        android:progressTint="@color/colorAccent"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Created by Efendi Hariyadi on 14/10/22, 6:00 PM
+  ~ Copyright (c) 2022 . All rights reserved.
+  ~ Last modified 14/10/22, 5:59 PM
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    style="?attr/materialCardViewFilledStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:clickable="true"
+    android:minWidth="@dimen/_120sdp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="@dimen/_5sdp"
+
+    app:cardElevation="@dimen/_5sdp"
+
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imgMedicineIcon"
+            android:layout_width="@dimen/_42sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:padding="@dimen/_5sdp"></ImageView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.60"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtMedicineName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:fontFamily="@font/poppinsmedium"
+                android:textColor="@android:color/black"
+
+
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/medicineDetails"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/txtMedicineStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/txtMedicineTimings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <info.androidhive.fontawesome.FontTextView
+                android:id="@+id/imgFavourite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/fa_star_solid"
+                android:textSize="@dimen/_20sdp"
+                android:textColor="@color/grey"
+                app:solid_icon="true"/>
+
+            <info.androidhive.fontawesome.FontTextView
+                android:id="@+id/imgDelete"
+
+                android:textColor="@android:color/holo_red_dark"
+                android:text="@string/fa_trash_alt"
+                android:textSize="@dimen/_20sdp"
+                android:layout_width="@dimen/_42sdp"
+                android:layout_height="@dimen/_42sdp"
+                android:padding="@dimen/_5sdp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

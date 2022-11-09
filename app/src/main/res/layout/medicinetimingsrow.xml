@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Created by Efendi Hariyadi on 28/06/22, 10:44 PM
+  ~ Copyright (c) 2022 . All rights reserved.
+  ~ Last modified 28/06/22, 5:03 PM
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    style="?attr/materialCardViewFilledStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:clickable="true"
+
+    app:cardBackgroundColor="#EDF0F8"
+    app:cardCornerRadius="@dimen/_4sdp"
+
+    app:cardElevation="@dimen/_3sdp"
+
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+
+        <TextView
+
+            android:id="@+id/txtTiming"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+
+        <info.androidhive.fontawesome.FontTextView
+            android:id="@+id/txtRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_25sdp"
+
+
+            android:text="@string/fa_trash_solid"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_15sdp"
+            app:solid_icon="true" />
+
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

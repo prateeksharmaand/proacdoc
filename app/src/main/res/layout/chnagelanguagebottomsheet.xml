@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    app:cardCornerRadius="@dimen/_18sdp"
+    app:cardElevation="@dimen/_10sdp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Choose Your Preferred Language"
+
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+
+
+        <LinearLayout
+
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <com.airbnb.lottie.LottieAnimationView
+                    android:visibility="invisible"
+android:id="@+id/lottieenglish"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+
+                    android:adjustViewBounds="true"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="false"
+                    app:lottie_rawRes="@raw/greentick"
+                    app:lottie_speed="1"
+                    tools:ignore="ContentDescription" />
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/crdEnglish"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:backgroundTint="@color/md_theme_light_primary"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardElevation="@dimen/_10sdp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_marginRight="@dimen/_8sdp"
+
+                            android:fontFamily="@font/poppinsmedium"
+                            android:gravity="center"
+                            android:text="English"
+
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14sdp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.airbnb.lottie.LottieAnimationView
+android:visibility="invisible"
+                    android:id="@+id/lottieHindi"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+
+                    android:adjustViewBounds="true"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="false"
+                    app:lottie_rawRes="@raw/greentick"
+                    app:lottie_speed="1"
+                    tools:ignore="ContentDescription" />
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/crdHindi"
+                    android:layout_width="@dimen/_120sdp"
+
+                    android:layout_height="@dimen/_40sdp"
+                    android:backgroundTint="@color/md_theme_light_primary"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardElevation="@dimen/_10sdp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_marginRight="@dimen/_8sdp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:gravity="center"
+                            android:text="हिन्दी"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14sdp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

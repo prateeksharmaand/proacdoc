@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Created by Efendi Hariyadi on 28/06/22, 10:44 PM
+  ~ Copyright (c) 2022 . All rights reserved.
+  ~ Last modified 28/06/22, 5:03 PM
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    style="?attr/materialCardViewFilledStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:clickable="true"
+
+    app:cardBackgroundColor="#EDF0F8"
+    app:cardCornerRadius="@dimen/_4sdp"
+
+    app:cardElevation="@dimen/_3sdp"
+
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+
+        >
+
+        <TextView
+            android:id="@+id/txtBenificiaries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="@dimen/_11sdp" />
+        <TextView
+
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:textSize="@dimen/_10sdp" />
+        <TextView
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:id="@+id/txtStatus"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_12sdp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnViewReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/_10sdp"
+            android:backgroundTint="@color/green"
+
+
+            android:elevation="@dimen/_3sdp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="View Report"
+            android:textColor="?attr/colorOnPrimary" />
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

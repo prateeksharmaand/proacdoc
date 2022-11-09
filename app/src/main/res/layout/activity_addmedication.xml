@@ -1,0 +1,1054 @@
+<?xml version="1.0" encoding="utf-8"?><!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Created by Efendi Hariyadi on 10/08/22, 11:22 AM
+  ~ Copyright (c) 2022 . All rights reserved.
+  ~ Last modified 10/08/22, 11:22 AM
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="health.care.ai.ui.labvitalstrend.ViewLabVitalsTrendActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+
+        app:liftOnScroll="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_scrollFlags="scroll"
+            app:title="@string/add_medication"
+
+
+            app:titleTextColor="?attr/colorOnPrimary"
+
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBar"
+        android:background="#F2F1F6"
+        android:orientation="vertical">
+
+        <com.shuhart.stepview.StepView
+            android:id="@+id/step_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"
+
+            app:sv_animationDuration="100"
+            app:sv_animationType="All"
+            app:sv_doneCircleColor="@color/green"
+            app:sv_doneCircleRadius="@dimen/_20sdp"
+            app:sv_doneStepLineColor="@color/grey"
+            app:sv_doneStepMarkColor="@android:color/white"
+            app:sv_doneTextColor="@color/grey"
+            app:sv_nextStepLineColor="@color/grey"
+            app:sv_nextTextColor="@color/grey"
+            app:sv_selectedCircleColor="@color/md_theme_light_primary"
+            app:sv_selectedCircleRadius="@dimen/_15sdp"
+            app:sv_selectedStepNumberColor="@color/grey"
+            app:sv_selectedTextColor="@color/colorPrimaryDark"
+            app:sv_stepLineWidth="@dimen/_1sdp"
+            app:sv_stepNumberTextSize="@dimen/_12sdp"
+            app:sv_stepPadding="@dimen/_3sdp"
+            app:sv_stepViewStyle="@style/StepView"
+            app:sv_steps="@array/details"
+            app:sv_stepsNumber="3"
+            app:sv_textSize="@dimen/_10sdp" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_margin="@dimen/_10sdp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/_10sdp"
+                        app:cardElevation="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:fontFamily="@font/poppinsregular"
+                                android:gravity="center"
+                                android:inputType="textCapCharacters"
+                                android:text="Medication Name"
+                                android:textSize="@dimen/_16sdp"></TextView>
+
+                            <EditText
+                                android:id="@+id/etMedicineName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:hint="Add Medicine Name"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/grey"
+                                android:textSize="@dimen/_12sdp"
+                                app:backgroundTint="?attr/colorPrimary" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <androidx.cardview.widget.CardView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_margin="@dimen/_10sdp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/_10sdp"
+                        app:cardElevation="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/_10sdp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:fontFamily="@font/poppinsregular"
+                                android:gravity="center"
+                                android:text="Choose the Medication Type"
+                                android:textSize="@dimen/_16sdp"></TextView>
+
+                            <com.google.android.material.chip.ChipGroup
+                                android:id="@+id/chipGroupMedicineTpe"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                app:checkedChip="@+id/chipCpp"
+                                app:selectionRequired="true"
+                                app:singleSelection="true">
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipCpp"
+                                    style="@style/TagChip"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Capsule" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipJava"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tablet" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipPython"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Liquid" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipTropical"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Propical" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipCream"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cream" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipDevice"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Device" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipDrops"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Drops" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipOintment"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Ointment" />
+
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipGel"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Gel" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipInhaler"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Inhaler" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipLotion"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lotion" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipInjection"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Injection" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipForm"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Form" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chippatch"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Patch" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chippowder"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Powder" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipStray"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Spray" />
+                            </com.google.android.material.chip.ChipGroup>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <androidx.cardview.widget.CardView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_margin="@dimen/_10sdp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/_10sdp"
+                        app:cardElevation="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/_10sdp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:fontFamily="@font/poppinsregular"
+                                android:gravity="center"
+                                android:text="Add the Medication Strength"
+                                android:textSize="@dimen/_16sdp"></TextView>
+
+                            <EditText
+                                android:id="@+id/etStrength"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_margin="@dimen/_10sdp"
+                                android:hint="Add Strength"
+                                android:inputType="number"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/grey"
+                                android:textSize="@dimen/_12sdp"
+                                app:backgroundTint="?attr/colorPrimary" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:fontFamily="@font/poppinsregular"
+
+                                android:text="Choose unit"
+                                android:textSize="@dimen/_16sdp"></TextView>
+
+                            <com.google.android.material.chip.ChipGroup
+                                android:id="@+id/chipGroupStrengthType"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                app:checkedChip="@+id/chipMG"
+                                app:selectionRequired="true"
+                                app:singleSelection="true">
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipMG"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="mg" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipMCG"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="mcg" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipG"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="g" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipml"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="ml" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chippercent"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="%" />
+
+                            </com.google.android.material.chip.ChipGroup>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/four"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_margin="@dimen/_10sdp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/_10sdp"
+                        app:cardElevation="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:fontFamily="@font/poppinsregular"
+                                android:gravity="center"
+                                android:text="When will you take this?"
+                                android:textSize="@dimen/_16sdp"></TextView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/crdFreQuency"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                app:cardCornerRadius="@dimen/_10sdp"
+                                app:cardElevation="@dimen/_5sdp">
+
+                                <RelativeLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="@dimen/_10sdp"
+                                        android:fontFamily="@font/poppinsmedium"
+                                        android:text="Frequency"
+                                        android:textSize="@dimen/_11sdp" />
+
+                                    <TextView
+                                        android:id="@+id/txtFrequency"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+
+
+                                        android:layout_marginRight="@dimen/_20sdp"
+                                        android:text="Every Day"
+                                        android:textColor="@color/md_theme_light_primary"
+                                        android:textSize="@dimen/_11sdp"
+                                        app:solid_icon="true" />
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_margin="@dimen/_15sdp"
+
+
+                                android:text="If you schedule a time app will send you a notification to take your medication"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/_10sdp"
+                                app:solid_icon="true" />
+
+                            <RadioGroup
+                                android:id="@+id/radioFrequency"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:checkedButton="@id/radioAsNeeded"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+
+                                <RadioButton
+                                    android:id="@+id/radioRegular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="At Regular Intervals"></RadioButton>
+
+                                <RadioButton
+                                    android:id="@+id/radioSpecificDays"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="On Specific Days of the Week"></RadioButton>
+
+                                <RadioButton
+                                    android:id="@+id/radioAsNeeded"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="As Needed"></RadioButton>
+                            </RadioGroup>
+
+                            <TextView
+                                android:id="@+id/txtChooseInterval"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:fontFamily="@font/poppinsregular"
+                                android:gravity="center"
+                                android:text="Choose Interval"
+                                android:textSize="@dimen/_16sdp"
+                                android:visibility="gone"></TextView>
+
+                            <com.google.android.material.chip.ChipGroup
+                                android:id="@+id/radioIntervelRegular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:visibility="gone"
+                                app:checkedChip="@+id/chipDay"
+                                app:selectionRequired="true"
+                                app:singleSelection="true">
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipDay"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="Every Day" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipOtherDay"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Every Other Day" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipThreedays"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Every Three Days" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipFourdays"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Every Four Days" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipfivedays"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Every Five Days" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipsixdays"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Every Six Days" />
+
+                            </com.google.android.material.chip.ChipGroup>
+
+                            <com.google.android.material.chip.ChipGroup
+                                android:id="@+id/radioIntervelSpecificDays"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:visibility="gone"
+                                app:checkedChip="@+id/chipDay"
+                                app:selectionRequired="true"
+                                app:singleSelection="true">
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipSunday"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="Every Sunday" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipMonday"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Every Monday" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipTuesday"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Every Tuesday" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipWednesday"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Every Wednesday" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipThursday"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Every Thursday" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipFriday"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Every Friday" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipSeturday"
+                                    style="@style/TagChip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Every Saturday" />
+
+                            </com.google.android.material.chip.ChipGroup>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:fontFamily="@font/poppinsregular"
+                                android:gravity="center"
+                                android:text="Start Date"
+                                android:textSize="@dimen/_16sdp" />
+
+                            <EditText
+                                android:id="@+id/etStartDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:hint="Select Start Date"
+                                android:inputType="numberDecimal"
+                                android:textColor="?attr/colorOnSurface"
+                                android:textColorHint="?attr/colorOnSurface"
+
+                                android:textSize="@dimen/_12sdp"
+                                app:backgroundTint="?attr/colorPrimary" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:fontFamily="@font/poppinsregular"
+                                android:gravity="center"
+                                android:text="Time of Day"
+                                android:textSize="@dimen/_16sdp" />
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                app:cardCornerRadius="@dimen/_10sdp"
+                                app:cardElevation="@dimen/_5sdp">
+
+                                <LinearLayout
+                                    android:id="@+id/llAddMedicineTime"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <info.androidhive.fontawesome.FontTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+
+
+                                        android:text="@string/fa_plus_solid"
+                                        android:textColor="@color/green"
+                                        android:textSize="@dimen/_15sdp"
+                                        app:solid_icon="true" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="@dimen/_10sdp"
+                                        android:fontFamily="@font/poppinsmedium"
+                                        android:text="Add a Time"
+                                        android:textSize="@dimen/_11sdp" />
+
+
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerViewTime"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:scrollbars="none"
+
+                                />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/five"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_margin="@dimen/_10sdp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/_10sdp"
+                        app:cardElevation="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:fontFamily="@font/poppinsregular"
+                                android:gravity="center"
+                                android:text="Choose the shape"
+                                android:textSize="@dimen/_16sdp"></TextView>
+
+                            <xyz.teamgravity.imageradiobutton.GravityRadioGroup
+                                android:id="@+id/gravity_group"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:orientation="horizontal">
+
+                                <xyz.teamgravity.imageradiobutton.GravityImageRadioButton
+                                    android:id="@+id/sone"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:tag="1"
+                                    app:girbImage="@drawable/stwo" />
+
+                                <xyz.teamgravity.imageradiobutton.GravityImageRadioButton
+                                    android:id="@+id/stwo"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:tag="2"
+                                    app:girbImage="@drawable/sthree"
+                                    app:girbPressedTextColor="@color/white"
+
+                                    app:girbUnpressedTextColor="?attr/colorPrimary" />
+
+                                <xyz.teamgravity.imageradiobutton.GravityImageRadioButton
+                                    android:id="@+id/sthree"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:tag="3"
+                                    app:girbImage="@drawable/sfour"
+                                    app:girbPressedTextColor="@color/white"
+
+                                    app:girbUnpressedTextColor="?attr/colorPrimary" />
+
+
+                                <xyz.teamgravity.imageradiobutton.GravityImageRadioButton
+                                    android:id="@+id/sseven"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:tag="4"
+                                    app:girbImage="@drawable/sfive"
+                                    app:girbPressedTextColor="@color/white"
+
+                                    app:girbUnpressedTextColor="?attr/colorPrimary" />
+
+                                <xyz.teamgravity.imageradiobutton.GravityImageRadioButton
+                                    android:id="@+id/seight"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:tag="5"
+                                    app:girbImage="@drawable/ssix"
+                                    app:girbPressedTextColor="@color/white"
+
+                                    app:girbUnpressedTextColor="?attr/colorPrimary" />
+                            </xyz.teamgravity.imageradiobutton.GravityRadioGroup>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:fontFamily="@font/poppinsregular"
+                                android:gravity="center"
+                                android:text="Choose the color"
+                                android:textSize="@dimen/_16sdp"></TextView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/crdMedicinecolor"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_margin="@dimen/_10sdp"
+
+                                app:cardCornerRadius="@dimen/_10sdp"
+                                app:cardElevation="@dimen/_5sdp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="@dimen/_10sdp"
+                                        android:fontFamily="@font/poppinsmedium"
+                                        android:text="Choose Medicine Color"
+                                        android:textSize="@dimen/_11sdp" />
+
+                                    <info.androidhive.fontawesome.FontTextView
+                                        android:id="@+id/faColor"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+
+
+                                        android:layout_marginRight="@dimen/_20sdp"
+                                        android:text="@string/fa_atom_solid"
+                                        android:textColor="@color/md_theme_light_primary"
+                                        android:textSize="@dimen/_15sdp"
+                                        app:solid_icon="true" />
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/six"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_margin="@dimen/_10sdp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/_10sdp"
+                        app:cardElevation="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:fontFamily="@font/poppinsregular"
+                                android:gravity="center"
+                                android:inputType="textCapCharacters"
+                                android:text="Medication Reminder Summery"
+                                android:textSize="@dimen/_16sdp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+
+                                    android:id="@+id/txtMedName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/_10sdp"
+                                    android:fontFamily="@font/poppinsregular"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+
+                                    android:textSize="@dimen/_16sdp" />
+
+                                <info.androidhive.fontawesome.FontTextView
+                                    android:id="@+id/faColorSelected"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+
+
+                                    android:layout_marginRight="@dimen/_20sdp"
+                                    android:text="@string/fa_atom_solid"
+                                    android:textColor="@color/md_theme_light_primary"
+                                    android:textSize="@dimen/_15sdp"
+                                    app:solid_icon="true" />
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:id="@+id/txtmedDetail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:fontFamily="@font/poppinsregular"
+                                android:gravity="center"
+                                android:inputType="textCapCharacters"
+
+                                android:textSize="@dimen/_14sdp" />
+
+                            <TextView
+                                android:id="@+id/txtmedDateTime"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:fontFamily="@font/poppinsregular"
+                                android:gravity="center"
+                                android:inputType="textCapCharacters"
+
+                                android:textSize="@dimen/_14sdp" />
+
+                            <ImageView
+                                android:id="@+id/imgShape"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/_5sdp"
+
+
+                                />
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_50sdp"
+
+                    android:clickable="false"
+
+                    android:elevation="@dimen/_3sdp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="Next"
+                    android:textColor="?attr/colorOnPrimary" />
+
+                <LinearLayout
+
+                    android:id="@+id/lvBottom"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_52sdp"
+                        android:layout_height="@dimen/_52sdp"
+                        android:layout_gravity="center"
+
+                        android:src="@drawable/refrain" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/tncdata"
+                        android:textColor="@color/unicorn_black_70"
+                        android:textSize="@dimen/_9sdp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBar"
+
+        android:indeterminate="true"
+        android:progressTint="@color/colorAccent"
+        android:visibility="gone" />
+
+</RelativeLayout>

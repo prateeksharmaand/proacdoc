@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="health.care.ai">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_BACKGROUND_LOCATION"
+        tools:node="remove" />
+
+    <queries>
+        <package android:name="com.whatsapp" />
+    </queries>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+
+            <data android:mimeType="text/plain" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".application.MainApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:overrideLibrary="io.agora.agorauikit_android"
+        tools:replace="android:allowBackup">
+
+        <activity
+            android:name=".ui.medication.MedicationActivity"
+            android:parentActivityName=".ui.login.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.abhawithapi.AbhaHomeActivity"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".ui.addmedication.AddMedicationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.labvitalstrend.ViewLabVitalsTrendActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.heartratemonitor.HeartRateMonitorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.privacy.PrivacyPolicyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.abha.ABHAwebActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.reportdetails.ReportDetails"
+            android:exported="false" />
+        <activity
+            android:name=".ui.heartratedetails.HeartRateDetailsActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.addcustomvitalrecord.AddCustomVitalRecordActivity"
+            android:exported="false"
+            android:label="Add Custom Vitals" />
+        <activity
+            android:name=".ui.labordersummarypdf.LabTestOrderSummaryPDFActivity"
+            android:exported="false"
+            android:label="Lab Test Report" />
+        <activity
+            android:name=".ui.alllabtest.AllLabTestsActivity"
+            android:exported="false"
+            android:label="Popular tests &amp; Packages" />
+        <activity
+            android:name=".ui.profilelabtestdetails.LabTestProfileDetailsActivity"
+            android:exported="false"
+            android:label="Lab Test Details" />
+        <activity
+            android:name=".ui.viewcart.ViewCartActivity"
+            android:exported="false"
+            android:label="View Cart" />
+        <activity
+            android:name=".ui.labtestfinaldetails.LabTestFinalDetailsActivity"
+            android:exported="false"
+            android:label="View Cart" />
+        <activity
+            android:name=".ui.smarthealthdetails.SmartHealthDetailsActivity"
+            android:exported="false"
+            android:label="Smart Health Details" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.App.Starting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <data
+                    android:host="open"
+                    android:scheme="ayushman" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <!-- Branch App Links -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="inviteme.app.link"
+                    android:scheme="https" />
+                <!-- example-alternate domain is required for App Links when the Journeys/Web SDK and Deepviews are used inside your website. -->
+                <data
+                    android:host="inviteme-alternate.app.link"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="inviteme.app.link"
+                    android:scheme="https" />
+                <!-- example-alternate domain is required for App Links when the Journeys/Web SDK and Deepviews are used inside your website. -->
+                <data
+                    android:host="inviteme-alternate.app.link"
+                    android:scheme="https" />
+                <data
+                    android:host="inviteme.app.link/heartbeat"
+                    android:scheme="https" />
+                <!-- example-alternate domain is required for App Links when the Journeys/Web SDK and Deepviews are used inside your website. -->
+                <data
+                    android:host="inviteme.app.link/heartbeat"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:exported="true"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.PostNotification.PostNotificationActivity"
+            android:label="Post From Notification"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.referandearn.ReferandEarnActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.mobilenumber.MobileNumberActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.healthbot.HealthbotwebActivity"
+            android:exported="false" />
+        <activity android:name=".ui.createabhaaadharactivity.CreateAbhaAdharActivity" android:exported="false"/>
+        <activity android:name=".ui.createabhamobileactivity.CreateAbhaMobileActivity"  android:exported="false" />
+        <activity android:name=".ui.registerabhaactivity.CreateAbhaActivity"  android:exported="false" />
+        <activity android:name=".ui.privacy.PrivacyPolicyActivity"  android:exported="false" />
+        <activity android:name=".ui.beni.ProfilesListActivity"  android:exported="false" />
+
+
+        <service
+            android:name=".utils.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".utils.MedicineService" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_round_perm_media_24" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.             .messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="io.branch.sdk.BranchKey"
+            android:value="key_live_pi6XygC54yABG3zphBTQ2abnvqh9WiBM" />
+        <meta-data
+            android:name="io.branch.sdk.BranchKey.test"
+            android:value="secret_live_zTtR4Ah8W9fmrqxqZLghT0RZji5pccTg" />
+        <meta-data
+            android:name="io.branch.sdk.TestMode"
+            android:value="false" /> <!-- Set to true to use Branch_Test_Key (useful when simulating installs and/or switching between debug and production flavors) -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="health.care.ai.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider"
+                tools:replace="android:resource" />
+        </provider>
+
+    </application>
+
+</manifest>

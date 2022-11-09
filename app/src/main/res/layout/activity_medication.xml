@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?><!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Created by Efendi Hariyadi on 10/08/22, 11:22 AM
+  ~ Copyright (c) 2022 . All rights reserved.
+  ~ Last modified 10/08/22, 11:22 AM
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="health.care.ai.ui.labvitalstrend.ViewLabVitalsTrendActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+
+            app:liftOnScroll="true">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_scrollFlags="scroll"
+                app:title="@string/tracking_your_medication"
+
+
+                app:titleTextColor="?attr/colorOnPrimary"
+
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/appBar"
+            android:background="#F2F1F6"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:visibility="gone"
+                android:id="@+id/recyclerViewMedicines"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+
+                android:scrollbars="none"
+
+                />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/crdNoAddedMedicine"
+                style="?attr/materialCardViewFilledStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:visibility="gone"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_90sdp"
+                        android:layout_gravity="center"
+
+                        android:src="@drawable/medtop" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+
+                        android:fontFamily="@font/poppinsmedium"
+                        android:gravity="center"
+                        android:text="Set up Medications"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_marginLeft="@dimen/_20sdp"
+                                android:src="@drawable/med" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:fontFamily="@font/poppinsmedium"
+                                android:text="@string/track_all_your_medications_at_one_place"
+                                android:textSize="@dimen/_11sdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_marginLeft="@dimen/_20sdp"
+                                android:src="@drawable/schedule" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:fontFamily="@font/poppinsmedium"
+                                android:text="@string/set_a_schedule_and_get_reminders"
+                                android:textSize="@dimen/_11sdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_marginLeft="@dimen/_20sdp"
+                                android:src="@drawable/medsafe" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:fontFamily="@font/poppinsmedium"
+                                android:text="@string/your_medication_information_is_encrypted_and_cannot_be_shared_to_any_third_party_for_advertisement_or_promotional_use"
+                                android:textSize="@dimen/_11sdp" />
+                        </LinearLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnAddMedication"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_50sdp"
+
+                            android:clickable="false"
+
+                            android:elevation="@dimen/_3sdp"
+                            android:fontFamily="@font/poppinsregular"
+                            android:text="@string/add_a_medication"
+                            android:textColor="?attr/colorOnPrimary" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+
+                android:fontFamily="@font/poppinsmedium"
+                android:text="@string/more"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                android:id="@+id/crdExportMedicine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_5sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="Export And share Medicines List"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <info.androidhive.fontawesome.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+
+
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:text="@string/fa_share_solid"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/_15sdp"
+                        app:solid_icon="true" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardInfo"
+
+
+                style="?attr/materialCardViewElevatedStyle"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/lightt_yellow_bg"
+                app:cardElevation="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinsregular"
+                            android:text="You can mark the medicines as favourite that can be visible from home screen directly."
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:gravity="center"
+
+                        android:orientation="horizontal">
+
+
+                        <info.androidhive.fontawesome.FontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_4sdp"
+
+                            android:text="@string/fa_info_circle_solid"
+                            android:textColor="@color/fui_bgTwitter"
+
+                            android:textSize="@dimen/_20sdp"
+                            app:solid_icon="true" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:id="@+id/lvBottom"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_52sdp"
+                    android:layout_height="@dimen/_52sdp"
+                    android:layout_gravity="center"
+
+                    android:src="@drawable/refrain" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/tncdata"
+                    android:textColor="@color/unicorn_black_70"
+                    android:textSize="@dimen/_9sdp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appBar"
+
+            android:indeterminate="true"
+            android:progressTint="@color/colorAccent"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/floating_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/md_theme_light_primary"
+        android:text="Add Medicine"
+        android:textColor="@color/white"
+        app:iconTint="@color/white"
+        app:icon="@drawable/ic_plus_white_24dp" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

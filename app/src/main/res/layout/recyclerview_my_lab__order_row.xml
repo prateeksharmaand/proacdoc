@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Created by Efendi Hariyadi on 28/06/22, 10:44 PM
+  ~ Copyright (c) 2022 . All rights reserved.
+  ~ Last modified 28/06/22, 5:03 PM
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    style="?attr/materialCardViewFilledStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:clickable="true"
+    android:minWidth="@dimen/_120sdp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="@dimen/_5sdp"
+
+    app:cardElevation="@dimen/_5sdp"
+
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+    <LinearLayout
+        android:background="#EDF0F8"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.50"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="Order Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_10sdp" />
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:id="@+id/txtOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="0dp"
+            android:layout_weight="0.50"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"> <TextView
+            android:text="Total Payable Amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsregular"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10sdp" />
+            <TextView
+                android:textStyle="bold"
+                android:text="D76544"
+                android:id="@+id/txtAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_12sdp" /></LinearLayout>
+
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Test Profile Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:textSize="@dimen/_10sdp" />
+        <TextView
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:id="@+id/txtName"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="0.50"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="Appointment Details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_10sdp" />
+                <TextView
+                    android:id="@+id/txtApptDetails"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="0.50"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="Booked At"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_10sdp" />
+                <TextView
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:id="@+id/txtBooked"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnViewDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/_10sdp"
+            android:backgroundTint="@color/green"
+
+
+            android:elevation="@dimen/_3sdp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="View Details"
+            android:textColor="?attr/colorOnPrimary" />
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

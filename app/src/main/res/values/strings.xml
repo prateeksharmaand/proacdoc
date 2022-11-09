@@ -1,0 +1,183 @@
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Created by Efendi Hariyadi on 21/07/22, 2:35 PM
+  ~ Copyright (c) 2022 . All rights reserved.
+  ~ Last modified 06/07/22, 4:51 PM
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<resources>
+    <string name="app_name">#Ayushman bharat</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="drawer_open">open drawer</string>
+    <string name="drawer_close">drawer close</string>
+    <string name="action_notify">notification</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="featured_posts">Featured Posts</string>
+    <string name="name">Name</string>
+    <string name="email_address">Email Address</string>
+
+    <string name="logout">Logout</string>
+    <string name="updateprofiletitle">Update Profile</string>
+    <string name="medical_documents">Medical Documents</string>
+    <string name="title_activity_report_details">Report Details</string>
+    <string name="your_orignal_document_is_the_most_reliable_source_of_information">Your orignal document is the most reliable source of information.</string>
+    <string name="rs">\u20B9 %1$s</string>
+    <string name="heartRateDetailsgreen">
+ <![CDATA[ <b><font color=#000000>Your heart rate is </b>  <b><font color=#228b22>%1$s</b>
+
+]]>
+  </string>
+    <string name="heartRateDetailsred">
+ <![CDATA[ <b><font color=#000000>Your heart rate is </b>  <b><font color=#FF0000>%1$s</b>
+
+]]>
+  </string>
+    <string name="loginayushman">Ayushman</string>
+    <string name="loginbharat">Bharat</string>
+    <string name="login_content">If a person wants to be part of the ABDM, she must create a health ID, which is a randomly generated 14-digit number. The ID will be broadly used for three purposes: unique identification, authentication, and threading of the beneficiary’s health records</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="tnc">By creating an account your agree to our Terms and Conditions</string>
+    <string name="verifiymobiletitle">Verify Mobile Number</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="mobilecontinue">Continue</string>
+    <string name="an_sms_will_be_sent">An sms will be sent on your mobile number with 6 digit verification code.\nStandard SMS rates may apply.</string>
+    <string name="tendigit_code_sent">Enter 6 digit Verification code sent to your mobile number</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="home_abha_title">Generate Ayushman Bharat ABHA or Health ID number</string>
+    <string name="home_abha_desc"><![CDATA[It allows you to share & access your health data linked with your ABHA or Health ID]]></string>
+    <string name="home_register_abha">Register For ABHA</string>
+    <string name="popular_tests_amp_packages">Popular tests &amp; Packages</string>
+    <string name="social_anxiety">Social Anxiety</string>
+    <string name="home_social_desc">Tired of social anxiety Run Smart Health Checks Check your health risks of various diseases</string>
+    <string name="run_health_checks">Run Health Checks</string>
+    <string name="refer_amp_earn">Refer &amp; Earn</string>
+    <string name="get_heart_insights_free">Get Heart Insights free</string>
+    <string name="track_your_health_with_smart_health">Track your health with Smart Health</string>
+    <string name="view_health">View Health</string>
+    <string name="cashback_amp_discounts">CashBack &amp; Discounts</string>
+    <string name="pulse_rate_monitor">Pulse Rate Monitor</string>
+    <string name="measure_your_pulse_rate_using_your_smart_phone_camera">Measure your pulse rate using your smart phone camera</string>
+    <string name="measure_heart_beat">Measure Heart Beat</string>
+    <string name="your_lab_test_appointments">Your Lab Test Appointments</string>
+    <string name="track_your_lab_orders">Track your lab orders</string>
+    <string name="my_orders">My Orders</string>
+    <string name="take_another_heart_rate">Take Another Heart Rate</string>
+    <string name="measure_your_heart_rate_now">Measure your heart rate now</string>
+    <string name="measure_now">Measure Now</string>
+    <string name="save_medical_records">Save Medical Records</string>
+    <string name="in_a_secure_vault_and_share_with_doctors_easily">In a secure vault and share with doctors easily</string>
+    <string name="upload_record">Upload Record</string>
+    <string name="manage_your_diabetes">Manage your diabetes</string>
+    <string name="you_can_track_your_blood_sugar_values_and_get_insights">You can track your blood sugar values and get insights</string>
+    <string name="add_glucose_values">Add Glucose values</string>
+    <string name="tncdata">Your personal health data is 100% safe and secure.It can never be shared without your permission.</string>
+    <string name="labtest_nav">Lab Test Records</string>
+    <string name="smart_health">Smart Health</string>
+    <string name="myorders">My Orders</string>
+    <string name="register_abha">Register For ABHA</string>
+    <string name="run_self_check">Run Self Health Check</string>
+    <string name="health_summary">Health Summary</string>
+    <string name="learn_how_smart_health_vitals_are_created_you_can_access_them_anytime">Learn how smart health vitals are created.You can access them anytime</string>
+    <string name="place_your_index_finger_gently_on_camera_press_slightly_and_wait_for_30_seconds">Place your index finger gently on camera, press slightly and wait for 30 seconds</string>
+    <string name="heart_rate">Heart Rate</string>
+    <string name="beta">Beta</string>
+    <string name="measurement_in_progress_keep_your_device_steady">Measurement in progress, keep your device steady</string>
+    <string name="beats_per_minute">beats per minute</string>
+    <string name="organize_your_medical_documents_with_smart_tags_and_find_them_easily_across_symptoms_medicines_health_parameters_and_more">Organize your medical documents with smart tags and find them easily across symptoms, medicines, health parameters and more.</string>
+    <string name="add_first_medical_document">Add First Medical Document</string>
+    <string name="refrain_from_uploading_non_medical_documents_these_files_may_get_deleted">Refrain from uploading non-medical documents, these files may get deleted</string>
+    <string name="smart_reports">Smart Reports</string>
+    <string name="uploaded_report_are_scanned_to_generate_meaningful_shereable_graphs_of_your_health_vitals">Uploaded report are scanned to generate meaningful shereable graphs of your health vitals.</string>
+    <string name="add_vital_details">Add Vital Details</string>
+    <string name="vital_details">Vital details</string>
+    <string name="these_vitals_are_accesable_from_smart_health_and_they_constribute_in_making_insights">These vitals are accesable from smart health and they constribute in making insights</string>
+    <string name="test_value">Test Value</string>
+    <string name="test_unit">Test Unit</string>
+    <string name="submit">Submit</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="your_referal_link">Your Referal Link</string>
+    <string name="invite_your_friends">Invite Your Friends</string>
+    <string name="hear_rate_measureement">Heart Rate Measurement</string>
+    <string name="low">Low</string>
+    <string name="halthy">Healthy</string>
+    <string name="high">High</string>
+    <string name="danger">Danger</string>
+    <string name="a_healthy_heart_is_a_strong_heart_after_all_monitoring_your_resting_heart_rate_is_important_because_it_can_help_provide_clues_about_your_overall_heart_health_for_instance_a_consistently_high_resting_heart_rate_can_be_a_sign_that_your_heart_isn_t_working_as_efficiently_as_it_could_be">A healthy heart is a strong heart, after all. Monitoring your resting heart rate is important because it can help provide clues about your overall heart health. For instance, a consistently high resting heart rate can be a sign that your heart isn\'t working as efficiently as it could be.</string>
+    <string name="why_normal_heart_rate_is_important">Why Normal Heart Rate is Important?</string>
+    <string name="retry">Retry</string>
+    <string name="add_data">Add Data</string>
+    <string name="share_with_friends">Share with friends</string>
+    <string name="invite_your_friend_to_ayushman_bharat_to_measure_their_heart_rate">Invite your friend to ayushman bharat to measure their heart rate</string>
+    <string name="lab_report">Lab Report</string>
+    <string name="smart_report">Smart Report</string>
+    <string name="postedon">"Posted on "</string>
+    <string name="view_all">View All</string>
+    <string name="lab_test_details">Test Details</string>
+    <string name="do_not_eat_anything_except_water_12_hrs_before_the_test">Do not eat anything except water 12 hrs before the test</string>
+    <string name="inclusions">Inclusions</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="view_cart"></string>
+    <string name="my_cart">My Cart</string>
+    <string name="empty_cart">Empty Cart</string>
+    <string name="please_add_atleast_one_lab_test_to_continue">Please add atleast one lab test to continue</string>
+    <string name="items_in_cart_are_sync_daily_if_items_in_cart_not_ordered_then_cart_will_be_empty_everyday">Items in cart are sync daily, if items in cart not ordered then cart will be empty everyday</string>
+    <string name="checkout">Checkout</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="checkout_details">Checkout Details</string>
+    <string name="add_contact_and_address_details">Add Contact &amp; Address Details</string>
+    <string name="enter_address_for_home_collection">Enter Address for Home Collection</string>
+    <string name="enter_pin_code">Enter Pin Code</string>
+    <string name="choose_appointment_time_slot_for_service">Choose appointment time slot for service</string>
+    <string name="select_appointment_date">Select Appointment Date</string>
+    <string name="given_slots_are_as_per_technician_availability">Given slots are as per technician availability</string>
+    <string name="add_benificiaries">Add Benificiaries</string>
+    <string name="add_new_benificiary">Add New Benificiary</string>
+    <string name="you_can_select_min_1_and_max_10_benificiaries_nprice_will_be_calculated_as_per_count_of_benificiary_selected">You can select Min 1 and Max 10 benificiaries.\nPrice will be calculated as per count of benificiary selected.</string>
+    <string name="do_you_need_hard_copy_of_reports">Do you need hard copy of reports?</string>
+    <string name="place_order">Place Order</string>
+    <string name="book_lab_tests_amp_health_check_ups">Book Lab Tests &amp; Health Check-ups</string>
+    <string name="book_health_check_ups_amp_lab_tests_from_the_comfort_of_your_home_at_best_prices_you_can_make_bookings_for_over_2_000_tests_get_tested_by_120_top_verified_labs_such_as_thyrocare_amp_more"><![CDATA[Book health check-ups & lab tests from the comfort of your home at best prices. You can make bookings for over 2,000 tests. Get tested by 120+ top verified labs such as Thyrocare & more.]]></string>
+    <string name="book_your_first_lab_test">Book Your First Lab Test</string>
+    <string name="free_home_sample_collection_amp_access_report_online"><![CDATA[Free home sample-collection & access report online..]]></string>
+    <string name="SmartReport">Smart Report</string>
+    <string name="orignamrecord">Original Record</string>
+    <string name="lab_vitals">Lab Vitals</string>
+    <string name="smarthealthvitals">Smart Health Vitals</string>
+    <string name="related_lab_parameters">Related Lab Parameters</string>
+    <string name="these_lab">These vitals are based on your previous health experiences</string>
+    <string name="edit_test_data">Edit Test Data</string>
+    <string name="tracking_your_medication">Tracking Your Medication</string>
+    <string name="add_a_medication">Track Medication</string>
+    <string name="track_all_your_medication_at_one_place_and_set_a_schedule_amp_get_reminders"><![CDATA[Track All your medication at one place and set a schedule & get reminders]]></string>
+    <string name="track_all_your_medications_at_one_place">Track all your medications at one place</string>
+  <string name="set_a_schedule_and_get_reminders">Set a schedule and get reminders</string>
+    <string name="your_medication_information_is_encrypted_and_cannot_be_shared_to_any_third_party_for_advertisement_or_promotional_use">Your medication information is encrypted and cannot be shared to any third party for advertisement or promotional use.</string>
+    <string name="more">More</string>
+  <string name="viewprivacypolicy" translatable="false">View privacy policy</string>
+  <string name="taptoaccept" translatable="false">Tap to Accept</string>
+  <string name="add_medication">Add Medication</string>
+    <string name="favmarkedmedicine">Favourite Marked Medicines</string>
+    <string name="login_with_abha_and_link_with_kae_profile_to_access_all_your_medical_records">Login with ABHA and link with KAE profile to access all your medical records</string>
+    <string name="create_abha">Create ABHA</string>
+    <string name="already_have_abha">Already Have ABHA?</string>
+    <string name="link_your_abha">Link Your ABHA</string>
+    <string name="enter_12_digit_aadhar_number">Enter 12 Digit Aadhar Number</string>
+  <string name="privacy" translatable="false">Privacy Policy</string>
+    <string name="you_can_add_family_members_profiles_to_add_their_abha_id">You can add family members profiles to create their ABHA Id</string>
+    <string name="add_new_profile">Add New Profile</string>
+    <string name="ndhm" translatable="false">\@ndhm</string>
+  <string name="manage_your_abha_id">Manage Your ABHA ID</string>
+  <array name="details">
+    <item>Name</item>
+    <item>Type</item>
+    <item>Strength</item>
+    <item>Timings</item>
+    <item>Shape</item>
+    <item>Review</item>
+  </array>
+</resources>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/drawable/ic_user.xml" value="0.165" />
+        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_abha_create.xml" value="0.34172661870503596" />
+        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_abha_create_adhaar.xml" value="0.67" />
+        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_abha_create_mobile.xml" value="0.6147540983606558" />
+        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_abha_home.xml" value="0.7305194805194806" />
+        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_add_custom_vital_record.xml" value="0.4" />
+        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_heart_rate_monitor.xml" value="0.5269320843091335" />
+        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_login.xml" value="0.41451990632318503" />
+        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_mobile_number.xml" value="0.6" />
+        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_privacypolicy.xml" value="0.40749414519906324" />
+        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_profiles_list.xml" value="0.5685670261941448" />
+        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_view_lab_vitals_trend.xml" value="0.4953161592505855" />
+        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/add_beni_bottomsheet.xml" value="0.72" />
+        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/fragment_home.xml" value="0.536" />
+        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/nav_header_main.xml" value="0.4484777517564403" />
+        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/profile_list_row.xml" value="1.0" />
+        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/recyclerview_beni__orser_summary_row.xml" value="0.4484777517564403" />
+        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/recyclerview_beni_row.xml" value="0.536" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/drawable-v24/ic_nav_closed_icon.xml" value="0.1095" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/drawable/animated_icon.xml" value="0.1395" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/drawable/branding_image_drawable.xml" value="0.1615" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/drawable/branding_image_layer_list.xml" value="0.1615" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/drawable/chipbackgroundcolor.xml" value="0.163" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/drawable/ic_baseline_chat_24.xml" value="0.165" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/drawable/ic_launcher_background.xml" value="0.152" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1515" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/drawable/ic_menu_camera.xml" value="0.1765" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/drawable/ic_splashlogoone.xml" value="0.152" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/drawable/rounded_bg.xml" value="0.1485" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/drawable/splash_screen_animateable_icon.xml" value="0.13" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/layout/activity_comments.xml" value="0.2" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/layout/activity_directchat.xml" value="0.22447916666666667" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/layout/activity_login.xml" value="0.4" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/layout/activity_postnotification.xml" value="0.153125" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/layout/activity_sample.xml" value="0.25416666666666665" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/layout/activity_updateprofile.xml" value="0.2" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/layout/add_postbottomsheet.xml" value="0.264" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/layout/app_bar_main.xml" value="0.15416666666666667" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/layout/app_bar_main2.xml" value="0.1421875" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/layout/content_main.xml" value="0.15416666666666667" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/layout/content_main2.xml" value="0.15416666666666667" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/layout/fragment_chatroom.xml" value="0.21510416666666668" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/layout/fragment_favourite.xml" value="0.215625" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/layout/fragment_home.xml" value="0.215625" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/layout/fragment_posts.xml" value="0.264" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/layout/fragment_trending.xml" value="0.25416666666666665" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/layout/fragment_whatis.xml" value="0.22447916666666667" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/layout/nav_header_main.xml" value="0.264" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/layout/recyclerview_chatroom_row.xml" value="0.264" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/layout/recyclerview_comments_right_row.xml" value="0.2" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/layout/recyclerview_comments_row.xml" value="0.72" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/layout/recyclerview_posts_row.xml" value="0.4" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/layout/row_subcategory_chips.xml" value="0.18125" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/menu-v26/main.xml" value="0.2375" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/menu/activity_main_drawer.xml" value="0.4" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1546875" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/menu/main.xml" value="0.14010416666666667" />
+        <entry key="..\:/eclipseworkspace/apps/nearme/PostsTestRepo/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.172" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.2515" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/drawable/ic_untitled_3_1.xml" value="0.2515" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/drawable/splash_screen_animateable_icon.xml" value="0.2515" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/layout/activity_comments.xml" value="0.17135416666666667" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/layout/activity_directchat.xml" value="0.17135416666666667" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/layout/activity_heart_rate_monitor.xml" value="0.264" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/layout/activity_home.xml" value="0.2" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/layout/activity_postnotification.xml" value="0.17135416666666667" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/layout/activity_report_details.xml" value="0.18541666666666667" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/layout/activity_updateprofile.xml" value="0.17135416666666667" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/layout/add_postbottomsheet.xml" value="0.17135416666666667" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/layout/fragment_chatroom.xml" value="0.17135416666666667" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/layout/fragment_favourite.xml" value="0.17135416666666667" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/layout/fragment_home.xml" value="0.264" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/layout/fragment_medical_records_pdf.xml" value="0.225" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/layout/fragment_medicalrecords.xml" value="0.22" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/layout/fragment_medicalrecordsmartreport.xml" value="0.2609375" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/layout/fragment_medicalrecordvitals.xml" value="0.246875" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/layout/fragment_posts.xml" value="0.17135416666666667" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/layout/fragment_report_details.xml" value="0.22864583333333333" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/layout/fragment_symptoms.xml" value="0.17395833333333333" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/layout/fragment_trending.xml" value="0.17135416666666667" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/layout/fragment_whatis.xml" value="0.17135416666666667" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/layout/nav_header_main.xml" value="0.17135416666666667" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/layout/recyclerview_chatroom_row.xml" value="0.17135416666666667" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/layout/recyclerview_comments_right_row.xml" value="0.17135416666666667" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/layout/recyclerview_comments_row.xml" value="0.18541666666666667" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/layout/recyclerview_posts_row.xml" value="0.2" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/layout/recyclerview_smart_report_row.xml" value="0.246875" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/layout/row_subcategory_chips.xml" value="0.17135416666666667" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/menu/activity_main_drawer.xml" value="0.234375" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/menu/bottom_nav_menu.xml" value="0.17395833333333333" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/menu/bottom_nav_menu_medical_record_details.xml" value="0.18541666666666667" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/menu/main.xml" value="0.2359375" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2515" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/PostsTestRepo/app/src/main/res/xml/file_paths.xml" value="0.18541666666666667" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/drawable-nodpi/medicine_full_list_recyclerview.xml" value="0.2165" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/drawable/green_bg_rounded.xml" value="0.178" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/drawable/grey_bg_rounded.xml" value="0.1475" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.2295" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/drawable/red_bg_rounded.xml" value="0.1475" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/drawable/redbadge_bg.xml" value="0.1765" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/drawable/splash_screen_animateable_icon.xml" value="0.175" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/Add_vitals_lab_bottomsheet.xml" value="0.325" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_abha.xml" value="0.2359375" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_add_custom_vital_record.xml" value="0.75" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_addmedication.xml" value="0.8800000000000001" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_all_lab_tests.xml" value="0.33" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_healthbot.xml" value="0.309375" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_heart_rate_details.xml" value="0.1" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_heart_rate_monitor.xml" value="0.1" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_home.xml" value="0.2" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_lab_order_summary.xml" value="0.25" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_lab_order_summary_pdf.xml" value="0.2703125" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_lab_test_final_details.xml" value="0.536" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_medication.xml" value="0.72" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_mobile_number.xml" value="0.33" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_profile_test_details.xml" value="0.189873417721519" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_referandearn.xml" value="0.12640449438202248" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_report_details.xml" value="0.14950166112956811" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_smarthealthdetails.xml" value="0.264" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_streaming.xml" value="0.2390625" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_updateprofile.xml" value="0.2786458333333333" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_view_lab_vitals_trend.xml" value="0.1" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_viewcart.xml" value="0.33" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/add_beni_bottomsheet.xml" value="0.23229166666666667" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/add_vitals_lab_bottomsheet.xml" value="0.536" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/chnagelanguagebottomsheet.xml" value="0.4" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/customspinnerrow.xml" value="0.3625" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/fragment_home.xml" value="0.24388857305287096" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/fragment_lab_order_summary_pdf.xml" value="0.284375" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/fragment_medical_records_pdf.xml" value="0.3625" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/fragment_medicalrecords.xml" value="0.4" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/fragment_medicalrecordsmartreport.xml" value="0.25" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/fragment_my_orders.xml" value="0.12640449438202248" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/fragment_smarthealth.xml" value="0.11508951406649616" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/medicine_full_list_recyclerview.xml" value="0.72" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/medicinetimingsrow.xml" value="0.75" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/nav_header_main.xml" value="0.22760416666666666" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/notification_status_bar.xml" value="0.90625" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/recycler_appointmentslot.xml" value="0.21041666666666667" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/recyclerview_beni__orser_summary_row.xml" value="0.346875" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/recyclerview_beni_row.xml" value="0.67" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/recyclerview_lab_cart__row.xml" value="0.3625" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/recyclerview_lab_profile_child_tests_row.xml" value="0.18697916666666667" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/recyclerview_lab_test__row.xml" value="0.45933014354066987" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/recyclerview_my_lab__order_row.xml" value="0.536" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/recyclerview_posts_row.xml" value="0.22" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/recyclerview_smart_health_details_row.xml" value="0.21979166666666666" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/recyclerview_smart_health_row.xml" value="0.4911242603550296" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/recyclerview_smart_report_row.xml" value="0.5097312326227988" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/recyclerviewmedicine.xml" value="0.6733021077283372" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/update_vitals_lab_bottomsheet.xml" value="0.47513812154696133" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/vitalinnerdetails_row.xml" value="0.21979166666666666" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/menu/activity_main_drawer.xml" value="0.3415384615384615" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.33" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/menu/main.xml" value="0.22760416666666666" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.15" />
+        <entry key="..\:/eclipseworkspace/apps/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
+        <entry key="..\:/kotlin-koin-mvvm-retrofit-coroutines-master/app/src/main/res/layout/activity_comments.xml" value="0.14010416666666667" />
+        <entry key="..\:/kotlin-koin-mvvm-retrofit-coroutines-master/app/src/main/res/layout/activity_home.xml" value="0.14010416666666667" />
+        <entry key="..\:/kotlin-koin-mvvm-retrofit-coroutines-master/app/src/main/res/layout/activity_main.xml" value="0.14010416666666667" />
+        <entry key="..\:/kotlin-koin-mvvm-retrofit-coroutines-master/app/src/main/res/layout/content_main.xml" value="0.14010416666666667" />
+        <entry key="..\:/kotlin-koin-mvvm-retrofit-coroutines-master/app/src/main/res/layout/fragment_favourite.xml" value="0.16822916666666668" />
+        <entry key="..\:/kotlin-koin-mvvm-retrofit-coroutines-master/app/src/main/res/layout/fragment_home.xml" value="0.178125" />
+        <entry key="..\:/kotlin-koin-mvvm-retrofit-coroutines-master/app/src/main/res/layout/fragment_home2.xml" value="0.22604166666666667" />
+        <entry key="..\:/kotlin-koin-mvvm-retrofit-coroutines-master/app/src/main/res/layout/nav_header_main.xml" value="0.14010416666666667" />
+        <entry key="..\:/kotlin-koin-mvvm-retrofit-coroutines-master/app/src/main/res/layout/recyclerview_comments_row.xml" value="0.14010416666666667" />
+        <entry key="..\:/kotlin-koin-mvvm-retrofit-coroutines-master/app/src/main/res/layout/recyclerview_favourites_row.xml" value="0.1796875" />
+        <entry key="..\:/kotlin-koin-mvvm-retrofit-coroutines-master/app/src/main/res/layout/recyclerview_item_row.xml" value="0.2375" />
+        <entry key="..\:/kotlin-koin-mvvm-retrofit-coroutines-master/app/src/main/res/layout/recyclerview_posts_row.xml" value="0.23854166666666668" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Created by Efendi Hariyadi on 28/06/22, 10:44 PM
+  ~ Copyright (c) 2022 . All rights reserved.
+  ~ Last modified 28/06/22, 5:03 PM
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+
+
+    app:cardCornerRadius="@dimen/_15sdp"
+    app:elevation="@dimen/_4sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="?attr/selectableItemBackground"
+        android:orientation="vertical"
+
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <com.github.barteksc.pdfviewer.PDFView
+                android:background="#66000000"
+android:visibility="gone"
+                android:id="@+id/pdfView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+
+
+
+                />
+            <ImageView
+                android:visibility="gone"
+                android:scaleType="fitXY"
+                android:id="@+id/imgReport"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"/>
+            <LinearLayout
+                android:id="@+id/llLabs"
+                android:background="#66000000"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <info.androidhive.fontawesome.FontTextView
+                    android:layout_margin="@dimen/_4sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/fa_bong_solid"
+                    android:textColor="#ffffff"
+
+                    android:textSize="@dimen/_10sdp"
+                    app:solid_icon="true" />
+                <TextView
+
+                    android:text="@string/lab_report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/llSmartReport"
+                android:layout_toLeftOf="@+id/llLabs"
+                android:background="#66000000"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <info.androidhive.fontawesome.FontTextView
+                    android:layout_margin="@dimen/_4sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/fa_star"
+                    android:textColor="@color/lightt_yellow_bg"
+
+                    android:textSize="@dimen/_10sdp"
+                    app:solid_icon="true" />
+                <TextView
+
+                    android:text="@string/smart_report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <TextView
+
+            android:id="@+id/txtDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:fontFamily="@font/poppinsregular"
+
+            android:textSize="@dimen/_12sdp" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Created by Efendi Hariyadi on 21/07/22, 2:56 PM
+  ~ Copyright (c) 2022 . All rights reserved.
+  ~ Last modified 08/07/22, 3:28 PM
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/menu_home" />
+    <item
+        android:id="@+id/firstFragment"
+        android:icon="@drawable/ic_baseline_assignment_24"
+        android:title="@string/labtest_nav" />
+
+    <item
+        android:id="@+id/smarthealthFragment"
+        android:icon="@drawable/ic_baseline_health_and_safety_24"
+        android:title="@string/smart_health" />
+
+    <item
+        android:id="@+id/myLabOrders"
+        android:icon="@drawable/ic_baseline_list_alt_24"
+        android:title="@string/myorders" />
+
+
+</menu>

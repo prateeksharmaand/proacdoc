@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Created by Efendi Hariyadi on 21/07/22, 2:23 PM
+  ~ Copyright (c) 2022 . All rights reserved.
+  ~ Last modified 08/07/22, 4:01 PM
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="health.care.ai.ui.medicalrecords.MedicalRecordsFragment"
+        android:label="@string/labtest_nav"
+        tools:layout="@layout/fragment_medicalrecords">
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="health.care.ai.ui.homefragment.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/smarthealth"
+            app:destination="@id/smarthealthFragment" />
+        <action
+            android:id="@+id/medicaldocuments"
+            app:destination="@id/firstFragment" />
+        <action
+            android:id="@+id/viewOrders"
+            app:destination="@id/myLabOrders" />
+    </fragment>
+    <fragment
+        android:id="@+id/smarthealthFragment"
+        android:name="health.care.ai.ui.smarthealth.SmartHealthFragment"
+        android:label="@string/smart_health"
+        tools:layout="@layout/fragment_smarthealth">   </fragment>
+
+    <fragment
+        android:id="@+id/myLabOrders"
+        android:name="health.care.ai.ui.mylaborders.MyOrdersFragment"
+        android:label="@string/myorders"
+        tools:layout="@layout/fragment_my_orders">  <action
+        android:id="@+id/homeFragment"
+        app:destination="@id/homeFragment" />   </fragment>
+   <!-- <fragment
+        android:id="@+id/firstFragment"
+        android:name="health.care.ai.ui.posts.PostsFragment"
+        android:label="Near Me"
+        tools:layout="@layout/fragment_posts">
+
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="health.care.ai.ui.trending.TrendingFragment"
+        android:label="Trending"
+        tools:layout="@layout/fragment_trending" />
+
+    <fragment
+        android:id="@+id/WhatISFragment"
+        android:name="health.care.ai.ui.whatis.WhatIsFragment"
+        android:label="What is This Thing?"
+        tools:layout="@layout/fragment_whatis" />
+    <fragment
+        android:id="@+id/ChatroomFragment"
+        android:name="health.care.ai.ui.chatrooms.ChatroomFragment"
+        android:label="Chats"
+        tools:layout="@layout/fragment_chatroom"
+
+        />
+-->
+
+</navigation>

@@ -1,0 +1,181 @@
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Created by Efendi Hariyadi on 21/07/22, 2:35 PM
+  ~ Copyright (c) 2022 . All rights reserved.
+  ~ Last modified 06/07/22, 4:51 PM
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<resources>
+    <string name="app_name">#Ayushman bharat</string>
+    <string name="loginayushman">आयुष्मान</string>
+    <string name="loginbharat">भारत</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">मुख्य पृष्ठ</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="drawer_open">open drawer</string>
+    <string name="drawer_close">drawer close</string>
+    <string name="action_notify">notification</string>
+    <string name="title_activity_home">मुख्य पृष्ठ</string>
+
+    <string name="featured_posts">Featured Posts</string>
+    <string name="name">Name</string>
+    <string name="email_address">Email Address</string>
+
+
+    <string name="logout">लॉग आउट</string>
+    <string name="updateprofiletitle">Update Profile</string>
+    <string name="medical_documents">मेडिकल लैब टेस्ट रिकॉर्ड </string>
+    <string name="title_activity_report_details">मेडिकल लैब टेस्ट विवरण</string>
+    <string name="your_orignal_document_is_the_most_reliable_source_of_information">आपका मूल दस्तावेज़ सूचना का सबसे विश्वसनीय स्रोत है।</string>
+<string name="rs">\u20B9 %1$s</string>
+    <string name="heartRateDetailsgreen">
+ <![CDATA[ <b><font color=#000000>आपकी हृदय गति है </b>  <b><font color=#228b22>%1$s</b>
+
+]]>
+  </string>
+    <string name="heartRateDetailsred">
+ <![CDATA[ <b><font color=#000000>आपकी हृदय गति है</b>  <b><font color=#FF0000>%1$s</b>
+
+]]>
+  </string>
+
+    <string name="login_content">आयुष्मान भारत योजना या जन अयोग्य योजना के माध्यम से गरीब परिवारों को सलाना पांच लाख का बीमा दिया जायेगा, जिसके माध्यम से वो सभी 05 लाख रुपये तक मुफ़्त में 1350 बीमारियों के लिए अपना इलाज करवा सकते है।</string>
+    <string name="sign_in_with_google">शुरू करें </string>
+    <string name="tnc">ऐप पर आयुष्मान भारत अकाउंट बनाकर आप हमारे नियमों और शर्तों से सहमत हैं</string>
+    <string name="verifiymobiletitle">मोबाइल नंबर की पुष्टि करें</string>
+    <string name="enter_mobile_number">मोबाइल नंबर दर्ज करें</string>
+    <string name="mobilecontinue">आगे बढ़ें</string>
+    <string name="an_sms_will_be_sent">आपके मोबाइल नंबर पर 6 अंकों के सत्यापन कोड के साथ एक एसएमएस भेजा जाएगा। मानक एसएमएस दरें लागू हो सकती हैं।</string>
+    <string name="tendigit_code_sent">आपके मोबाइल नंबर पर भेजा गया 6 अंकों का सत्यापन कोड दर्ज करें</string>
+    <string name="verify_otp">ओटीपी सत्यापित करें</string>
+    <string name="home_abha_title">आयुष्मान भारत आभा या हेल्थ आईडी नंबर जेनरेट करें</string>
+    <string name="home_abha_desc">यह आपको अपने आभा या स्वास्थ्य आईडी से जुड़े अपने स्वास्थ्य डेटा को साझा करने और एक्सेस करने की अनुमति देता है</string>
+    <string name="home_register_abha">आभा.के लिए रजिस्टर करें</string>
+    <string name="popular_tests_amp_packages">लोकप्रिय लैब स्वास्थ्य परीक्षण और पैकेज</string>
+    <string name="social_anxiety">सोशल एंग्जायटी डिसऑर्डर </string>
+    <string name="home_social_desc">सामाजिक चिंता से थक गए स्मार्ट स्वास्थ्य जांच चलाएं विभिन्न बीमारियों के अपने स्वास्थ्य जोखिमों की जांच करें</string>
+    <string name="run_health_checks">स्वास्थ्य जांच चलाएं</string>
+    <string name="refer_amp_earn">शेयर करें और कमाएं</string>
+    <string name="get_heart_insights_free">हार्ट इनसाइट्स निःशुल्क प्राप्त करें</string>
+    <string name="track_your_health_with_smart_health">स्मार्ट हेल्थ के साथ अपने स्वास्थ्य को ट्रैक करें</string>
+    <string name="view_health">स्वास्थ्य देखें</string>
+    <string name="cashback_amp_discounts">कैशबैक और छूट</string>
+    <string name="pulse_rate_monitor">पल्स रेट मॉनिटर</string>
+    <string name="measure_your_pulse_rate_using_your_smart_phone_camera">अपने स्मार्ट फ़ोन कैमरे का उपयोग करके अपनी पल्स रेट मापें</string>
+    <string name="measure_heart_beat">हार्ट बीट को मापें</string>
+    <string name="your_lab_test_appointments">आपकी लैब टेस्ट अपॉइंटमेंट</string>
+    <string name="track_your_lab_orders">अपने लैब टेस्ट ऑर्डर को ट्रैक करें</string>
+    <string name="my_orders">मेरा मेडिकल लैब टेस्ट विवरण</string>
+    <string name="take_another_heart_rate">एक और हृदय गति परीक्षण लें</string>
+    <string name="measure_your_heart_rate_now">अपनी हृदय गति अभी मापें</string>
+    <string name="measure_now">हृदय गति अभी मापें</string>
+    <string name="save_medical_records">मेडिकल लैब टेस्ट रिकॉर्ड सेव करें</string>
+    <string name="in_a_secure_vault_and_share_with_doctors_easily">सुरक्षित क्लाउड में और आसानी से डॉक्टरों के साथ साझा करें</string>
+    <string name="upload_record">लैब रिकॉर्ड अपलोड करें</string>
+    <string name="manage_your_diabetes">अपना मधुमेह प्रबंधित करें</string>
+    <string name="you_can_track_your_blood_sugar_values_and_get_insights">आप अपने रक्त शर्करा के मूल्यों को ट्रैक कर सकते हैं और महत्वपूर्ण जानकारी प्राप्त कर सकते हैं</string>
+    <string name="add_glucose_values">ग्लूकोज वैल्यू जोड़ें</string>
+    <string name="tncdata">आपका व्यक्तिगत स्वास्थ्य डेटा 100% सुरक्षित और सुरक्षित है। इसे आपकी अनुमति के बिना कभी भी साझा नहीं किया जा सकता है।</string>
+    <string name="labtest_nav">लैब  रिकॉर्ड</string>
+    <string name="smart_health">स्मार्ट सेहत</string>
+    <string name="myorders">लैब टेस्ट ऑर्डर </string>
+    <string name="register_abha">आभा.के लिए रजिस्टर करें</string>
+    <string name="run_self_check">स्वास्थ्य जोखिमों की जांच करें</string>
+    <string name="health_summary">स्वास्थ्य विवरण</string>
+
+    <string name="learn_how_smart_health_vitals_are_created_you_can_access_them_anytime">जानें कि आपकी स्मार्ट स्वास्थ्य संबंधी जानकारी कैसे बनाई जाती है। आप उन्हें कभी भी एक्सेस कर सकते हैं</string>
+
+    <string name="place_your_index_finger_gently_on_camera_press_slightly_and_wait_for_30_seconds">अपनी तर्जनी को कैमरे पर धीरे से रखें, हल्का सा दबाएं और 30 सेकंड तक प्रतीक्षा करें</string>
+
+
+    <string name="heart_rate">हृदय गति परीक्षण </string>
+    <string name="beta">बीटा</string>
+
+    <string name="beats_per_minute">बीट्स प्रति मिनट</string>
+
+    <string name="measurement_in_progress_keep_your_device_steady">हृदय गति मापन प्रगति पर है, अपने उपकरण को स्थिर रखें</string>
+    <string name="organize_your_medical_documents_with_smart_tags_and_find_them_easily_across_symptoms_medicines_health_parameters_and_more">अपने मेडिकल दस्तावेज़ों को स्मार्ट टैग के साथ व्यवस्थित करें और उन्हें लक्षणों, दवाओं, स्वास्थ्य मानकों आदि में आसानी से खोजें।</string>
+
+    <string name="add_first_medical_document">पहला मेडिकल दस्तावेज़ जोड़ें</string>
+    <string name="refrain_from_uploading_non_medical_documents_these_files_may_get_deleted">गैर-चिकित्सीय दस्तावेजों को अपलोड करने से बचें, ये फाइलें सिस्टम द्वारा हटाई जा सकती हैं</string>
+
+    <string name="smart_reports">स्मार्ट रिपोर्ट</string>
+    <string name="uploaded_report_are_scanned_to_generate_meaningful_shereable_graphs_of_your_health_vitals">अपलोड की गई रिपोर्ट को स्कैन किया जाता है ताकि आपके स्वास्थ्य संबंधी महत्वपूर्ण जानकारी के सार्थक शियरेबल विवरण तैयार किए जा सकें।</string>
+
+    <string name="add_vital_details">स्वास्थ्य संबंधी महत्वपूर्ण विवरण जोड़ें</string>
+    <string name="vital_details">स्वास्थ्य संबंधी विवरण</string>
+    <string name="these_vitals_are_accesable_from_smart_health_and_they_constribute_in_making_insights">ये स्वास्थ्य संबंधी महत्वपूर्ण बातें स्मार्ट स्वास्थ्य से सुलभ हैं और ये डॉक्टर को साझा करने योग्य बनाने में योगदान करती हैं</string>
+    <string name="test_value">टेस्ट वैल्यू</string>
+    <string name="test_unit">टेस्ट इकाई</string>
+    <string name="submit">जारी रखें</string>
+    <string name="update_profile">प्रोफ़ाइल अपडेट करें</string>
+    <string name="your_referal_link">आपका रेफरल लिंक</string>
+    <string name="invite_your_friends">अपने दोस्तों को आमंत्रित करो</string>
+    <string name="hear_rate_measureement">हृदय गति माप</string>
+    <string name="low">कम</string>
+    <string name="halthy">सामान्य</string>
+    <string name="high">अधिक</string>
+    <string name="danger">बहुत अधिक</string>
+    <string name="a_healthy_heart_is_a_strong_heart_after_all_monitoring_your_resting_heart_rate_is_important_because_it_can_help_provide_clues_about_your_overall_heart_health_for_instance_a_consistently_high_resting_heart_rate_can_be_a_sign_that_your_heart_isn_t_working_as_efficiently_as_it_could_be"> आराम करने वाली हृदय गति की निगरानी करना महत्वपूर्ण है क्योंकि यह आपके संपूर्ण हृदय स्वास्थ्य के बारे में सुराग प्रदान करने में मदद कर सकता है। उदाहरण के लिए, लगातार उच्च आराम दिल की दर इस बात का संकेत हो सकती है कि आपका दिल उतनी कुशलता से काम नहीं कर रहा है जितना हो सकता है।</string>
+    <string name="why_normal_heart_rate_is_important">सामान्य हृदय गति क्यों महत्वपूर्ण है?</string>
+    <string name="retry">पुन: प्रयास करें</string>
+    <string name="add_data">यह डेटा जोड़ें</string>
+    <string name="share_with_friends">दोस्तों के साथ शेयर करें</string>
+    <string name="invite_your_friend_to_ayushman_bharat_to_measure_their_heart_rate">अपने दोस्त को आयुष्मान भारत में उनकी हृदय गति मापने के लिए आमंत्रित करें</string>
+    <string name="lab_report">मेडिकल लैब टेस्ट लैब रिपोर्ट</string>
+    <string name="smart_report">स्मार्ट रिपोर्</string>
+    <string name="postedon">अपलोड की गई</string>
+    <string name="view_all">सभी देखें</string>
+    <string name="lab_test_details">मेडिकल लैब टेस्ट विवरण</string>
+    <string name="do_not_eat_anything_except_water_12_hrs_before_the_test">टेस्ट से 12 घंटे पहले पानी के अलावा कुछ भी लें</string>
+    <string name="inclusions">ये परीक्षण किए जाएंगे</string>
+    <string name="add_to_cart">कार्ट में जोड़ें</string>
+    <string name="view_cart">कार्ट देंखे</string>
+    <string name="my_cart">कार्ट देखें</string>
+    <string name="empty_cart">कार्ट खाली है</string>
+    <string name="please_add_atleast_one_lab_test_to_continue">कृपया जारी रखने के लिए कम से कम एक ैब टेस्ट कार्ट में जोड़ें</string>
+    <string name="items_in_cart_are_sync_daily_if_items_in_cart_not_ordered_then_cart_will_be_empty_everyday">कार्ट में आइटम रोज़ सिंक होते हैं, अगर कार्ट में आइटम ऑर्डर नहीं किए गए तो कार्ट रोज़ खाली हो जाएगा</string>
+    <string name="checkout">आगे बढ़ें</string>
+    <string name="total_amount">कुल राशि</string>
+    <string name="checkout_details">चेकआउट विवरण</string>
+    <string name="add_contact_and_address_details">संपर्क और पता विवरण जोड़ें</string>
+    <string name="enter_address_for_home_collection">होम कलेक्शन के लिए पता दर्ज करें</string>
+    <string name="enter_pin_code">पिन कोड दर्ज करें</string>
+    <string name="choose_appointment_time_slot_for_service">टेस्ट के लिए अपॉइंटमेंट टाइम स्लॉट चुनें</string>
+    <string name="select_appointment_date">टेस्ट के लिए डेट चुनें</string>
+    <string name="given_slots_are_as_per_technician_availability">दिए गए स्लॉट तकनीशियन उपलब्धता के अनुसार हैं</string>
+    <string name="add_benificiaries">टेस्ट के लिएसदस्यों को जोड़ें</string>
+  <string name="add_new_benificiary">टेस्ट के नया सदस्य जोड़ें</string>
+    <string name="you_can_select_min_1_and_max_10_benificiaries_nprice_will_be_calculated_as_per_count_of_benificiary_selected">आप न्यूनतम 1 और अधिकतम 10 सदस्यों का चयन कर सकते हैं। कुल राशि की गणना चयनित सदस्यों की गणना के अनुसार की जाएगी।</string>
+    <string name="do_you_need_hard_copy_of_reports">क्या आपको रिपोर्ट की हार्ड कॉपी चाहिए?</string>
+    <string name="place_order">आगे बढ़े</string>
+  <string name="book_lab_tests_amp_health_check_ups">बुक करें लैब टेस्ट और स्वास्थ्य जांच</string>
+    <string name="book_health_check_ups_amp_lab_tests_from_the_comfort_of_your_home_at_best_prices_you_can_make_bookings_for_over_2_000_tests_get_tested_by_120_top_verified_labs_such_as_thyrocare_amp_more">स्वास्थ्य जांच बुक करें &amp; आपके घर के आराम से सर्वोत्तम मूल्य पर लैब टेस्ट। आप 2,000 से अधिक लैब टेस्टों के लिए बुकिंग कर सकते हैं। 120+ शीर्ष सत्यापित कंपनियों जैसे कि थायरोकेयर और &amp; अन्य।</string>
+    <string name="book_your_first_lab_test">अपना पहला लैब टेस्ट बुक करें</string>
+    <string name="free_home_sample_collection_amp_access_report_online">मुफ़्त घरेलू नमूना-संग्रह &amp; ऑनलाइन रिपोर्ट प्राप्त करें</string>
+    <string name="SmartReport">स्मार्ट रिपोर्ट</string>
+    <string name="orignamrecord">मूल-रिकॉर्ड</string>
+  <string name="lab_vitals">लैब टेस्ट वाइटल्स</string>
+    <string name="smarthealthvitals">स्मार्ट हेल्थ विवरण</string>
+    <string name="related_lab_parameters">संबंधित लैब पैरामीटर्स</string>
+    <string name="these_lab">ये ज़रूरी बातें आपके पिछले स्वास्थ्य अनुभवों पर आधारित हैं</string>
+    <string name="edit_test_data">टेस्ट डेटा संपादित करें</string>
+    <string name="tracking_your_medication">अपनी दवा को ट्रैक करें</string>
+  <string name="add_a_medication">दवा ट्रैक करें</string>
+    <string name="track_all_your_medication_at_one_place_and_set_a_schedule_amp_get_reminders">अपनी सभी दवाओं को एक ही स्थान पर ट्रैक करें और एक शेड्यूल सेट करें और रिमाइंडर प्राप्त करें</string>
+    <string name="track_all_your_medications_at_one_place">अपनी सभी दवाओं को एक ही स्थान पर ट्रैक करें</string>
+  <string name="set_a_schedule_and_get_reminders">शेड्यूल सेट करें और रिमाइंडर प्राप्त करें</string>
+  <string name="your_medication_information_is_encrypted_and_cannot_be_shared_to_any_third_party_for_advertisement_or_promotional_use">आपकी दवा की जानकारी एन्क्रिप्ट की गई है और इसे विज्ञापन या प्रचार के लिए किसी तीसरे पक्ष के साथ साझा नहीं किया जा सकता है।</string>
+    <string name="more">जारी रखें</string>
+    <string name="add_medication">दवा जोड़ें</string>
+    <string name="favmarkedmedicine">Favourite Marked Medicines</string>
+    <string name="login_with_abha_and_link_with_kae_profile_to_access_all_your_medical_records">अपने सभी मेडिकल रिकॉर्ड तक पहुंचने के लिए ABHA के साथ लॉगिन करें और KAE प्रोफाइल से लिंक करें</string>
+    <string name="create_abha">आभा जेनरेट करें</string>
+    <string name="already_have_abha">पहले से ही ABHA है? अभी लिंक करें</string>
+    <string name="link_your_abha">ABHA लिंक करें</string>
+    <string name="enter_12_digit_aadhar_number">12 अंकों का आधार नंबर दर्ज करें</string>
+    <string name="you_can_add_family_members_profiles_to_add_their_abha_id">आप परिवार के सदस्यों की प्रोफाइल उनकी आभा आईडी से जोड़ सकते हैं</string>
+    <string name="add_new_profile">नई प्रोफ़ाइल जोड़ें</string>
+    <string name="manage_your_abha_id">अपनी आभा आईडी प्रबंधित करें</string>
+</resources>
