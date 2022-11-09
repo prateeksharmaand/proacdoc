@@ -11,7 +11,7 @@
     android:layout_height="match_parent"
 
     android:background="#EDF0F8"
-    tools:context="health.care.ai.ui.labvitalstrend.ViewLabVitalsTrendActivity">
+    tools:context="health.data.ai.proacdoc.ui.labvitalstrend.ViewLabVitalsTrendActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBar"

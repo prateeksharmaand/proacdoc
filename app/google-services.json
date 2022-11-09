@@ -1,41 +1,41 @@
 {
   "project_info": {
-    "project_number": "612643579422",
-    "project_id": "ayushman-bharat-ai",
-    "storage_bucket": "ayushman-bharat-ai.appspot.com"
+    "project_number": "145546384608",
+    "project_id": "healthdataaiproacdoc",
+    "storage_bucket": "healthdataaiproacdoc.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:612643579422:android:74b9fcc6f8a6debd29f00f",
+        "mobilesdk_app_id": "1:145546384608:android:7c925485d5acf4f6c02c85",
         "android_client_info": {
-          "package_name": "health.care.ai"
+          "package_name": "health.care.ai.proacdoc"
         }
       },
       "oauth_client": [
         {
-          "client_id": "612643579422-2egvfqdeqq9igots7e0ntlv211rlcvup.apps.googleusercontent.com",
+          "client_id": "145546384608-m96tfpk6i0q3kdgve5bv8tml2gopj5as.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "health.care.ai",
+            "package_name": "health.care.ai.proacdoc",
             "certificate_hash": "5d17df9dc2cd68bd2afddebbfba3d558288681e3"
           }
         },
         {
-          "client_id": "612643579422-ag15kr2u46cj6v5ac5henogrpbievsrm.apps.googleusercontent.com",
+          "client_id": "145546384608-chc60agl1h9ldu9eibdq429vlo08sqqc.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAA3IrnUVgiZkMBFZ5LUx-4iVUpKZF5xa0"
+          "current_key": "AIzaSyAo1bMH9ubzLzKsD68u2rGFE-P0VT87FnI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "612643579422-ag15kr2u46cj6v5ac5henogrpbievsrm.apps.googleusercontent.com",
+              "client_id": "145546384608-chc60agl1h9ldu9eibdq429vlo08sqqc.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

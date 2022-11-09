@@ -9,7 +9,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="health.care.ai.ui.home.HomeActivity">
+    tools:context="health.data.ai.proacdoc.ui.home.HomeActivity">
 
 
     <androidx.drawerlayout.widget.DrawerLayout

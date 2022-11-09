@@ -10,7 +10,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context="health.care.ai.ui.heartratemonitor.HeartRateMonitorActivity">
+    tools:context="health.data.ai.proacdoc.ui.heartratemonitor.HeartRateMonitorActivity">
 
 
     <com.airbnb.lottie.LottieAnimationView
