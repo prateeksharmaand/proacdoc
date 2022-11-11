@@ -5,8 +5,8 @@
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <resources>
-    <string name="app_name">#Ayushman bharat</string>
-    <string name="loginayushman">आयुष्मान</string>
+    <string name="app_name">#ProAcDoc</string>
+    <string name="loginayushman">ProAcDoc</string>
     <string name="loginbharat">भारत</string>
     <string name="action_settings">Settings</string>
 
@@ -40,7 +40,7 @@
 ]]>
   </string>
 
-    <string name="login_content">आयुष्मान भारत योजना या जन अयोग्य योजना के माध्यम से गरीब परिवारों को सलाना पांच लाख का बीमा दिया जायेगा, जिसके माध्यम से वो सभी 05 लाख रुपये तक मुफ़्त में 1350 बीमारियों के लिए अपना इलाज करवा सकते है।</string>
+    <string name="login_content">ProAcDoc एक सेवा मंच है जो आपके मेडिकल रिकॉर्ड और इतिहास को बनाए रखता है। ऐप की विभिन्न विशेषताएं स्वास्थ्य ट्रेंडिंग चार्ट, डॉक्टर के दौरे, बच्चे के टीकाकरण आदि का उत्पादन हैं। आपके द्वारा अपलोड की गई सभी रिपोर्टों के आधार पर ProAcDoc पर लोगों द्वारा स्वास्थ्य ट्रेंडिंग चार्ट बनाए जाते हैं।</string>
     <string name="sign_in_with_google">शुरू करें </string>
     <string name="tnc">ऐप पर आयुष्मान भारत अकाउंट बनाकर आप हमारे नियमों और शर्तों से सहमत हैं</string>
     <string name="verifiymobiletitle">मोबाइल नंबर की पुष्टि करें</string>
@@ -178,4 +178,11 @@
     <string name="you_can_add_family_members_profiles_to_add_their_abha_id">आप परिवार के सदस्यों की प्रोफाइल उनकी आभा आईडी से जोड़ सकते हैं</string>
     <string name="add_new_profile">नई प्रोफ़ाइल जोड़ें</string>
     <string name="manage_your_abha_id">अपनी आभा आईडी प्रबंधित करें</string>
+  <string name="abha_profile_titile">आभा प्रोफ़ाइल</string>
+  <string name="view_your_abha_card">अपना आभा कार्ड देखें</string>
+    <string name="fetching_qr_code_from_ndhm">एनडीएचएम से क्यूआर कोड प्राप्त किया जा रहा है</string>
+    <string name="invite_for_abha">अपने मित्रों को उनकी आभा आईडी बनाने के लिए ProAcDoc पर आमंत्रित करें</string>
+
+    <string name="fetching_abha_code_from_ndhm">एनडीएचएम से आभा कार्ड लाया जा रहा है</string>
+
 </resources>

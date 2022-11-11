@@ -54,10 +54,11 @@
 
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:scaleType="fitXY"
-                android:src="@drawable/mobiletop"></ImageView>
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center"
+
+                android:src="@drawable/preview"></ImageView>
 
             <LinearLayout
                 android:id="@+id/llMobileNo"
@@ -74,9 +75,11 @@
 
                 <EditText
                     android:id="@+id/etMobile"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/_10sdp"
+                    android:digits="0123456789"
                     android:hint="@string/enter_mobile_number"
                     android:inputType="phone"
                     android:maxLength="15"
@@ -106,10 +109,11 @@
 
             <LinearLayout
                 android:id="@+id/llOtp"
-                android:visibility="gone"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_height="wrap_content">
+                android:visibility="gone">
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -121,20 +125,22 @@
                     android:text="@string/tendigit_code_sent"
                     android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
+
                 <in.aabhasjindal.otptextview.OtpTextView
                     android:id="@+id/etOtp"
 
-                    android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:textColor="#000000"
-                    app:height="40dp"
-                    app:width="40dp"
                     app:bar_enabled="true"
                     app:bar_height="2dp"
+                    app:height="40dp"
                     app:length="6"
+                    app:otp_text_size="@dimen/_24sdp"
 
-                    app:otp_text_size="@dimen/_24sdp"/>
+                    app:width="40dp" />
+
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnVerifyOtp"
                     android:layout_width="wrap_content"

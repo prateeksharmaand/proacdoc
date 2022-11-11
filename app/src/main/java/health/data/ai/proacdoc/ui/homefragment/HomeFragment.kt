@@ -29,6 +29,7 @@ import health.care.ai.proacdoc.databinding.FragmentHomeBinding
 import health.data.ai.proacdoc.api.models.labtest.login.ProfileTest.Data
 
 import health.data.ai.proacdoc.room.entity.MedicineEntity
+import health.data.ai.proacdoc.ui.abha.ABHAwebActivity
 import health.data.ai.proacdoc.ui.medication.MedicationActivity
 import health.data.ai.proacdoc.ui.adapters.HomeProfileTestsAdapter
 import health.data.ai.proacdoc.ui.adapters.MedicinesListAdapter
@@ -125,7 +126,7 @@ class HomeFragment : Fragment() {
 
 
         binding.crdAbha.setOnClickListener(View.OnClickListener {
-             val intent = Intent(activity, ProfilesListActivity::class.java)
+             val intent = Intent(activity, ABHAwebActivity::class.java)
              startActivity(intent)
 
 
@@ -185,7 +186,7 @@ class HomeFragment : Fragment() {
         labTestViewModel.middlevareToken.observe(viewLifecycleOwner, Observer {
 
             lifecycleScope.launch {
-                dataStoreManager.setMiddlevareToken(it.results.data)
+              //  dataStoreManager.setMiddlevareToken(it.results.data)
 /*
                 val profileTestRequest = ProfileTestRequest()
                 profileTestRequest.apiKey = it.results.data

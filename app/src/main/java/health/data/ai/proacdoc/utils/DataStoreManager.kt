@@ -89,7 +89,16 @@ class DataStoreManager(private val context: Context) {
         get() = context.dataStore.data.map { preferences ->
             preferences[beniId] ?: 0
         }
+    suspend fun setabhaUserToken(type: String) {
+        context.dataStore.edit { preferences ->
+            preferences[abhaUserToken] = type
+        }
+    }
 
+    val getabhaUserToken: Flow<String>
+        get() = context.dataStore.data.map { preferences ->
+            preferences[abhaUserToken] ?: "0"
+        }
     companion object {
         private const val DATASTORE_NAME = "nearmedb"
 
@@ -97,6 +106,7 @@ class DataStoreManager(private val context: Context) {
         private val language = stringPreferencesKey("language");
         private val abhaToken = stringPreferencesKey("abhaToken");
         private val txnId = stringPreferencesKey("txnId");
+        private val abhaUserToken = stringPreferencesKey("abhaUserToken");
         private val beniId = intPreferencesKey("beniId");
         private val Context.dataStore by preferencesDataStore(
             name = DATASTORE_NAME

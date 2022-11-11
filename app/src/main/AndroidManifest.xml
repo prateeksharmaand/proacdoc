@@ -67,6 +67,10 @@
             android:name="health.data.ai.proacdoc.ui.labvitalstrend.ViewLabVitalsTrendActivity"
             android:exported="false" />
         <activity
+            android:name="health.data.ai.proacdoc.ui.abhaprofile.ABHProfileActivity"
+            android:exported="false" />
+
+        <activity
             android:name="health.data.ai.proacdoc.ui.heartratemonitor.HeartRateMonitorActivity"
             android:exported="false" />
         <activity
@@ -102,6 +106,12 @@
             android:name="health.data.ai.proacdoc.ui.viewcart.ViewCartActivity"
             android:exported="false"
             android:label="View Cart" />
+        <activity
+            android:name="health.data.ai.proacdoc.ui.viewabhacard.ViewAbhaCardActivity"
+            android:exported="false"
+           />
+
+
         <activity
             android:name="health.data.ai.proacdoc.ui.labtestfinaldetails.LabTestFinalDetailsActivity"
             android:exported="false"

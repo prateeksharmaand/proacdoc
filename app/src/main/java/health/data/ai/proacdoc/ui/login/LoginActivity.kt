@@ -36,6 +36,7 @@ import com.google.android.gms.tasks.Task
 import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
+import com.scottyab.rootbeer.RootBeer
 import health.care.ai.proacdoc.R
 import health.care.ai.proacdoc.databinding.ActivityLoginBinding
 
@@ -70,6 +71,10 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
+        val rootBeer = RootBeer(this)
+        if (rootBeer.isRooted) {
+            Toast.makeText(this,"Rooted device Found, Closing app",Toast.LENGTH_SHORT).show()
+        }
 
 
 

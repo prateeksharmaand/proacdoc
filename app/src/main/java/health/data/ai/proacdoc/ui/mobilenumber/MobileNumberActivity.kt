@@ -56,8 +56,12 @@ class MobileNumberActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.toolbar)
 
-        val fromLogin = intent.getBooleanExtra("fromLogin", false)
-        if (!fromLogin) {
+        val fromLogin = intent.getBooleanExtra("fromLogin", true)
+        if (fromLogin) {
+
+        }
+        else
+        {
             supportActionBar?.setDisplayHomeAsUpEnabled(true);
             supportActionBar?.setDisplayShowHomeEnabled(true);
             supportActionBar!!.setDisplayHomeAsUpEnabled(true)
@@ -111,12 +115,23 @@ class MobileNumberActivity : AppCompatActivity() {
             }
         }
         binding.btnSendOtp.setOnClickListener(View.OnClickListener {
-            Toast.makeText(
-                applicationContext,
-                "Setting up Verification",
-                Toast.LENGTH_SHORT
-            ).show()
-            startPhoneNumberVerification("+" + binding.ccp.selectedCountryCode + binding.etMobile.text)
+            if(binding.etMobile.text.length!=10)
+            {
+                Toast.makeText(
+                    applicationContext,
+                    "Enter Valid 10 Digit Mobile Number",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+            else{
+                Toast.makeText(
+                    applicationContext,
+                    "Setting up Verification",
+                    Toast.LENGTH_SHORT
+                ).show()
+                startPhoneNumberVerification("+" + binding.ccp.selectedCountryCode + binding.etMobile.text)
+            }
+
         })
         binding.btnVerifyOtp.setOnClickListener(View.OnClickListener {
 
@@ -166,13 +181,7 @@ class MobileNumberActivity : AppCompatActivity() {
                 } else {
 
                     if (task.exception is FirebaseAuthInvalidCredentialsException) {
-                        startActivity(
-                            Intent(
-                                this, HomeActivity
-                                ::class.java
-                            )
-                        )
-                        finish()
+
                         Toast.makeText(
                             applicationContext,
                             task.exception!!.message.toString(),
@@ -205,15 +214,50 @@ class MobileNumberActivity : AppCompatActivity() {
 
             loginViewModel.updateUserProfile(user)
 
-            val intent = Intent(
-                this, HomeActivity
-                ::class.java
-            )
-            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-            startActivity(
-                intent
-            )
-            finish()
+
+            val fromLogin = intent.getBooleanExtra("fromLogin", true)
+            if (fromLogin) {
+                val intent = Intent(
+                    this, HomeActivity
+                    ::class.java
+                )
+                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(
+                    intent
+                )
+                finish()
+            }
+            else
+            {
+                onBackPressed()
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         })
 

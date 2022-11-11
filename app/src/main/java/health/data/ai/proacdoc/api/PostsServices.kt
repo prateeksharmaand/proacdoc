@@ -29,6 +29,8 @@ import health.care.ai.proacdoc.BuildConfig
 import health.data.ai.proacdoc.api.models.Order.PostOrder.OrderRequest
 import health.data.ai.proacdoc.api.models.Order.PostOrder.OrderResponse
 import health.data.ai.proacdoc.api.models.abhatoken.AbhaTokenModel
+import health.data.ai.proacdoc.api.models.abhausertoken.AbhaUserTokenRequest
+import health.data.ai.proacdoc.api.models.abhausertoken.AbhaUserTokenresponse
 import health.data.ai.proacdoc.api.models.addAbhaToProfile.AddAbhaToProfileRequest
 import health.data.ai.proacdoc.api.models.addAbhaToProfile.AddAbhaToProfileResponse
 import health.data.ai.proacdoc.api.models.appointmentslots.AppointmentSlotresponse
@@ -72,6 +74,7 @@ import health.data.ai.proacdoc.api.models.verifyreisteraadharotp.VerifyRegisterA
 import health.data.ai.proacdoc.api.models.vitalsbymajorvitalid.VitalDetailsByIdResponse
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
+import okhttp3.ResponseBody
 import retrofit2.Response
 import retrofit2.http.*
 
@@ -245,5 +248,19 @@ interface PostsServices {
        @Body addAbhaToProfileRequest: AddAbhaToProfileRequest
 
     ): Response<AddAbhaToProfileResponse>
+
+
+    @Headers("Accept: application/json")
+    @POST(BuildConfig.abha_getuserToken)
+    suspend fun getAbhaUserToken(@Body abhaUserTokenRequest: AbhaUserTokenRequest, @Header("Authorization") token:String): Response<AbhaUserTokenresponse>
+
+    @Headers("Accept: application/json")
+    @GET(BuildConfig.abha_getQr)
+    suspend fun GetAbhaUserQr( @Header("Authorization") token:String,@Header("X-Token") xToken:String,): Response<ResponseBody>
+
+    @Headers("Accept: application/json")
+    @GET(BuildConfig.abha_getAbhaCard)
+    suspend fun GetAbhaUserCard( @Header("Authorization") token:String,@Header("X-Token") xToken:String,): Response<ResponseBody>
+
 
 }

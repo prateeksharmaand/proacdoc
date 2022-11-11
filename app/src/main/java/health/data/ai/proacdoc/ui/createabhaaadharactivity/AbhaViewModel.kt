@@ -16,6 +16,9 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
+import com.squareup.okhttp.ResponseBody
+import health.data.ai.proacdoc.api.models.abhausertoken.AbhaUserTokenRequest
+import health.data.ai.proacdoc.api.models.abhausertoken.AbhaUserTokenresponse
 import health.data.ai.proacdoc.api.models.addAbhaToProfile.AddAbhaToProfileRequest
 import health.data.ai.proacdoc.api.models.addAbhaToProfile.AddAbhaToProfileResponse
 import health.data.ai.proacdoc.api.models.registerabha.AbhaExceptionResponse
@@ -32,6 +35,7 @@ import health.data.ai.proacdoc.api.models.verifyreisteraadharotp.VerifyRegisterA
 import health.data.ai.proacdoc.repository.AbhaRepository
 
 import kotlinx.coroutines.*
+import okhttp3.RequestBody
 import retrofit2.HttpException
 import java.io.IOException
 
@@ -54,6 +58,9 @@ class AbhaViewModel(
         MutableLiveData<AbhaExceptionResponse>()
     val addAbhaToProfileResponse =
         MutableLiveData<AddAbhaToProfileResponse>()
+    val getabhaUserTokenresponse =
+        MutableLiveData<AbhaUserTokenresponse>()
+    val QrResponse=MutableLiveData<okhttp3.ResponseBody>()
     var job: Job? = null
 
     val exceptionHandler = CoroutineExceptionHandler { _, throwable ->
@@ -307,4 +314,148 @@ class AbhaViewModel(
         }
 
     }
+
+
+    fun getAbhaUserToken(
+        abhaUserTokenRequest: AbhaUserTokenRequest, token:String
+    ) {
+        loading.postValue(true)
+        job = CoroutineScope(Dispatchers.IO + exceptionHandler).launch {
+            val post =
+                abhaRepository.getAbhaUserToken(abhaUserTokenRequest, token)
+
+            withContext(Dispatchers.Main) {
+                try {
+                    loading.postValue(false)
+
+                    if (post.code() == 200) {
+                        getabhaUserTokenresponse.postValue(post.body())
+                    } else if (post.code() == 400) {
+                        val gson = Gson()
+                        val type = object : TypeToken<AbhaExceptionResponse>() {}.type
+                        var errorResponse: AbhaExceptionResponse? = gson.fromJson(post.errorBody()!!.charStream(), type)
+                        registererrorAbhaResponse.postValue(errorResponse!!)
+                    } else {
+
+                    }
+
+
+                } catch (throwable: Throwable) {
+                    loading.postValue(false)
+                    when (throwable) {
+                        is IOException -> {
+                            //    onError("Network Error")
+                        }
+                        is HttpException -> {
+                            val codeError = throwable.code()
+                            val errorMessageResponse = throwable.message()
+                            onError("Error $errorMessageResponse : $codeError")
+                        }
+                        else -> {
+                            ////onError("UnKnown error")
+                        }
+                    }
+                }
+                loading.value = false
+            }
+        }
+
+    }
+
+    fun getAbhaUserQr(
+        token:String,xToken:String
+    ) {
+        loading.postValue(true)
+        job = CoroutineScope(Dispatchers.IO + exceptionHandler).launch {
+            val post =
+                abhaRepository.GetAbhaUserQr( token,xToken)
+
+            withContext(Dispatchers.Main) {
+                try {
+                    loading.postValue(false)
+
+                    if (post.code() == 200) {
+                        QrResponse.postValue(post.body())
+                    } else if (post.code() == 400) {
+                        val gson = Gson()
+                        val type = object : TypeToken<AbhaExceptionResponse>() {}.type
+                        var errorResponse: AbhaExceptionResponse? = gson.fromJson(post.errorBody()!!.charStream(), type)
+                        registererrorAbhaResponse.postValue(errorResponse!!)
+                    } else {
+
+                    }
+
+
+                } catch (throwable: Throwable) {
+                    loading.postValue(false)
+                    when (throwable) {
+                        is IOException -> {
+                            //    onError("Network Error")
+                        }
+                        is HttpException -> {
+                            val codeError = throwable.code()
+                            val errorMessageResponse = throwable.message()
+                            onError("Error $errorMessageResponse : $codeError")
+                        }
+                        else -> {
+                            ////onError("UnKnown error")
+                        }
+                    }
+                }
+                loading.value = false
+            }
+        }
+
+    }
+    fun GetAbhaUserCard(
+        token:String,xToken:String
+    ) {
+        loading.postValue(true)
+        job = CoroutineScope(Dispatchers.IO + exceptionHandler).launch {
+            val post =
+                abhaRepository.GetAbhaUserCard( token,xToken)
+
+            withContext(Dispatchers.Main) {
+                try {
+                    loading.postValue(false)
+
+                    if (post.code() == 200) {
+                        QrResponse.postValue(post.body())
+                    } else if (post.code() == 400) {
+                        val gson = Gson()
+                        val type = object : TypeToken<AbhaExceptionResponse>() {}.type
+                        var errorResponse: AbhaExceptionResponse? = gson.fromJson(post.errorBody()!!.charStream(), type)
+                        registererrorAbhaResponse.postValue(errorResponse!!)
+                    } else {
+
+                    }
+
+
+                } catch (throwable: Throwable) {
+                    loading.postValue(false)
+                    when (throwable) {
+                        is IOException -> {
+                            //    onError("Network Error")
+                        }
+                        is HttpException -> {
+                            val codeError = throwable.code()
+                            val errorMessageResponse = throwable.message()
+                            onError("Error $errorMessageResponse : $codeError")
+                        }
+                        else -> {
+                            ////onError("UnKnown error")
+                        }
+                    }
+                }
+                loading.value = false
+            }
+        }
+
+    }
+
+
+
+
+
+
 }

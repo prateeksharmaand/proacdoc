@@ -19,6 +19,7 @@ import health.care.ai.proacdoc.databinding.ActivityProfilesListBinding
 
 import health.data.ai.proacdoc.api.models.User.UserModel
 import health.data.ai.proacdoc.api.models.benificiary.add.AddBeniRequest
+import health.data.ai.proacdoc.ui.abhaprofile.ABHProfileActivity
 
 import health.data.ai.proacdoc.ui.abhawithapi.AbhaHomeActivity
 import health.data.ai.proacdoc.ui.adapters.ProfilesListAdapter
@@ -116,6 +117,9 @@ class ProfilesListActivity : AppCompatActivity() {
                             }
                             else
                             {
+                                val intent = Intent(this, ABHProfileActivity::class.java)
+                                startActivity(intent)
+
 
 
                             }

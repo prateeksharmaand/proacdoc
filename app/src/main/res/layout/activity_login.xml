@@ -52,7 +52,8 @@
                 android:text="@string/loginbharat"
                 android:textColor="@color/colorAccent"
                 android:textSize="@dimen/_25sdp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:visibility="gone" />
 
         </LinearLayout>
 

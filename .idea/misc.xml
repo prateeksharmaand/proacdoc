@@ -9,16 +9,22 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/drawable/ic_user.xml" value="0.165" />
+        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_abha._profile.xml" value="0.3770491803278688" />
+        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_abha.xml" value="0.629976580796253" />
         <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_abha_create.xml" value="0.9" />
         <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_abha_create_adhaar.xml" value="0.67" />
         <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_abha_create_mobile.xml" value="0.6147540983606558" />
-        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_abha_home.xml" value="0.7305194805194806" />
-        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_add_custom_vital_record.xml" value="0.4" />
+        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_abha_home.xml" value="0.44806763285024154" />
+        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_abha_profile.xml" value="0.6" />
+        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_add_custom_vital_record.xml" value="0.67" />
+        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_addmedication.xml" value="0.629976580796253" />
+        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_heart_rate_details.xml" value="0.4344262295081967" />
         <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_heart_rate_monitor.xml" value="0.5269320843091335" />
-        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_login.xml" value="0.41451990632318503" />
-        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_mobile_number.xml" value="0.6" />
+        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_login.xml" value="0.67" />
+        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_mobile_number.xml" value="0.75" />
         <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_privacypolicy.xml" value="0.40749414519906324" />
         <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_profiles_list.xml" value="0.5685670261941448" />
+        <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_view_abha_card.xml" value="0.536" />
         <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/activity_view_lab_vitals_trend.xml" value="0.4953161592505855" />
         <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/add_beni_bottomsheet.xml" value="0.72" />
         <entry key="..\:/Bankit projects/proacdocprateek/proacdockotlin/app/ayushapp/app/src/main/res/layout/fragment_home.xml" value="0.536" />

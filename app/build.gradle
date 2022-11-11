@@ -24,6 +24,10 @@ android {
         buildConfigField "String", "registration_aadhaar_generateMobileOtp", "\"https://healthidsbx.abdm.gov.in/api/v1/registration/aadhaar/generateMobileOTP\""
         buildConfigField "String", "registration_aadhaar_verifyMobileOtp", "\"https://healthidsbx.abdm.gov.in/api/v1/registration/aadhaar/verifyMobileOTP\""
         buildConfigField "String", "registration_Create_AbhaId", "\"https://healthidsbx.abdm.gov.in/api/v1/registration/aadhaar/createHealthIdWithPreVerified\""
+        buildConfigField "String", "abha_getuserToken", "\"https://healthidsbx.abdm.gov.in/api/v1/auth/generate/access-token\""
+        buildConfigField "String", "abha_getQr", "\"https://healthidsbx.abdm.gov.in/api/v1/account/qrCode\""
+        buildConfigField "String", "abha_getAbhaCard", "\"https://healthidsbx.abdm.gov.in/api/v1/account/getPngCard\""
+
     }
 
     buildTypes {
@@ -177,6 +181,6 @@ dependencies {
 
 
     implementation("com.android.billingclient:billing-ktx:5.0.0")
-
+    implementation 'com.scottyab:rootbeer-lib:0.1.0'
 
 }

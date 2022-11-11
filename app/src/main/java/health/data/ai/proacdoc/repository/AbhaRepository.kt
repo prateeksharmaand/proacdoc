@@ -13,12 +13,18 @@
 package health.data.ai.proacdoc.repository
 
 import health.data.ai.proacdoc.api.PostsServices
+import health.data.ai.proacdoc.api.models.abhausertoken.AbhaUserTokenRequest
+import health.data.ai.proacdoc.api.models.abhausertoken.AbhaUserTokenresponse
 import health.data.ai.proacdoc.api.models.addAbhaToProfile.AddAbhaToProfileRequest
 import health.data.ai.proacdoc.api.models.registerabha.RegisterAbhaRequest
 import health.data.ai.proacdoc.api.models.registerabhagenerateadharotp.RegisterAbhaGenerateAdharOtpRequest
 import health.data.ai.proacdoc.api.models.registerabhageneratemobileotp.RegisterAbhaGenerateMobileOtp
 import health.data.ai.proacdoc.api.models.registerabhaverifymobileotp.RegisterabhaVerifyMobileOtpRequest
 import health.data.ai.proacdoc.api.models.verifyreisteraadharotp.VerifyRegisterAAadharOtpRequest
+import okhttp3.ResponseBody
+import retrofit2.Response
+import retrofit2.http.Body
+import retrofit2.http.Header
 
 class AbhaRepository(private val abhaServices: PostsServices) {
     suspend fun generateRegisterAdharOtp(
@@ -54,4 +60,11 @@ class AbhaRepository(private val abhaServices: PostsServices) {
         ) = abhaServices.addAbhaToBeni(
         registerAbhaRequest
     )
+
+    suspend fun getAbhaUserToken(abhaUserTokenRequest: AbhaUserTokenRequest, token:String)=abhaServices.getAbhaUserToken(abhaUserTokenRequest,token)
+    suspend fun GetAbhaUserQr( token:String,xToken:String,)=abhaServices.GetAbhaUserQr(token,xToken)
+    suspend fun GetAbhaUserCard(  token:String,xToken:String,)=abhaServices.GetAbhaUserCard(token,xToken)
+
+
+
 }

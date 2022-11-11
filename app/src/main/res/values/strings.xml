@@ -5,7 +5,7 @@
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <resources>
-    <string name="app_name">#Ayushman bharat</string>
+    <string name="app_name">#ProAcDoc</string>
 
     <string name="action_settings">Settings</string>
 
@@ -37,9 +37,9 @@
 
 ]]>
   </string>
-    <string name="loginayushman">Ayushman</string>
+    <string name="loginayushman">ProAcDoc</string>
     <string name="loginbharat">Bharat</string>
-    <string name="login_content">If a person wants to be part of the ABDM, she must create a health ID, which is a randomly generated 14-digit number. The ID will be broadly used for three purposes: unique identification, authentication, and threading of the beneficiary’s health records</string>
+    <string name="login_content">ProAcDoc is a service platform which maintains your medical records and history. The various features of the app are the production of health trending charts, doctor visits, child vaccinations etc. Health trending charts are made by the people at ProAcDoc on the basis of all the reports uploaded by you. </string>
     <string name="sign_in_with_google">Sign in with Google</string>
     <string name="tnc">By creating an account your agree to our Terms and Conditions</string>
     <string name="verifiymobiletitle">Verify Mobile Number</string>
@@ -172,7 +172,13 @@
     <string name="add_new_profile">Add New Profile</string>
     <string name="ndhm" translatable="false">\@ndhm</string>
   <string name="manage_your_abha_id">Manage Your ABHA ID</string>
-  <array name="details">
+    <string name="abha_profile_titile">ABHA Profile</string>
+  <string name="view_your_abha_card">View ABHA Card</string>
+    <string name="fetching_qr_code_from_ndhm">Fetching Qr Code From NDHM</string>
+  <string name="invite_for_abha">Invite your friend to ProAcDoc to create their ABHA ID</string>
+
+  <string name="fetching_abha_code_from_ndhm">Fetching ABHA Card From NDHM</string>
+    <array name="details">
     <item>Name</item>
     <item>Type</item>
     <item>Strength</item>
