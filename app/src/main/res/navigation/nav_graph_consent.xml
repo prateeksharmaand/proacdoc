@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Created by Efendi Hariyadi on 21/07/22, 2:23 PM
+  ~ Copyright (c) 2022 . All rights reserved.
+  ~ Last modified 08/07/22, 4:01 PM
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/pending">
+
+    <fragment
+        android:id="@+id/pending"
+        android:name="health.data.ai.proacdoc.ui.abhaconsentdetails.AbhaConsentRequestedFragment"
+        android:label="Pending"
+        tools:layout="@layout/fragment_abha_consent_details">
+    </fragment>
+
+    <fragment
+        android:id="@+id/granted"
+        android:name="health.data.ai.proacdoc.ui.abhaconsentdetails.AbhaConsentgrantedFragment"
+        android:label="Granted"
+        tools:layout="@layout/fragment_abha_consent_details">  </fragment>
+    <fragment
+        android:id="@+id/denied"
+        android:name="health.data.ai.proacdoc.ui.abhaconsentdetails.AbhaConsentDeniedFragment"
+        android:label="Denied"
+        tools:layout="@layout/fragment_abha_consent_details">  </fragment>
+    <fragment
+        android:id="@+id/expired"
+        android:name="health.data.ai.proacdoc.ui.abhaconsentdetails.AbhaConsentExpiredFragment"
+        android:label="Expired"
+        tools:layout="@layout/fragment_abha_consent_details">  </fragment>
+
+</navigation>
