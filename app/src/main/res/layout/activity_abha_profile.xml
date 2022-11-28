@@ -8,8 +8,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#F2F1F6"
     android:layout_height="match_parent"
+    android:background="#F2F1F6"
     tools:context="health.data.ai.proacdoc.ui.labvitalstrend.ViewLabVitalsTrendActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -39,236 +39,256 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
- <androidx.core.widget.NestedScrollView
-     android:background="#F2F1F6"
-     android:layout_below="@+id/appBar"
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content">
-     <LinearLayout
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBar"
+        android:background="#F2F1F6">
+
+        <LinearLayout
 
 
-         android:orientation="vertical"
-         android:layout_width="match_parent"
-         android:layout_height="match_parent">
-         <androidx.cardview.widget.CardView
-             android:id="@+id/crdProfile"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-             android:layout_margin="@dimen/_10sdp"
-             app:cardBackgroundColor="@color/white"
-             app:cardCornerRadius="@dimen/_10sdp"
-             app:cardElevation="@dimen/_5sdp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crdProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
 
-             <LinearLayout
-                 android:layout_width="match_parent"
-                 android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_5sdp">
 
-                 android:orientation="vertical">
-                 <ImageView
-                     android:id="@+id/imgUser"
-                     android:layout_gravity="center"
-                     android:layout_margin="@dimen/_5sdp"
-                     android:layout_width="@dimen/_50sdp"
-                     android:layout_height="@dimen/_50sdp"></ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
 
-                 <LinearLayout
-                     android:id="@+id/llLoading"
-                     android:orientation="vertical"
-                     android:layout_width="match_parent"
-                     android:layout_height="wrap_content">
-                     <com.airbnb.lottie.LottieAnimationView
-                         android:id="@+id/imgLottie"
-                         android:layout_width="match_parent"
-                         android:layout_height="@dimen/_100sdp"
-                         android:adjustViewBounds="false"
-                         android:scaleType="centerCrop"
+                    android:orientation="vertical">
 
-                         app:lottie_autoPlay="true"
-                         app:lottie_loop="true"
-                         app:lottie_rawRes="@raw/covin"
-                         app:lottie_scale="5"
-                         app:lottie_speed="1"
-                         tools:ignore="ContentDescription" />
-                     <TextView
-                         android:textStyle="bold"
-                        android:text="@string/fetching_qr_code_from_ndhm"
-                         android:layout_width="match_parent"
-                         android:layout_height="wrap_content"
+                    <ImageView
+                        android:id="@+id/imgUser"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp"></ImageView>
 
-                         android:fontFamily="@font/poppinsmedium"
-                         android:gravity="center"
+                    <LinearLayout
+                        android:id="@+id/llLoading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
-                         android:textSize="@dimen/_12sdp"
-                         />
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/imgLottie"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_100sdp"
+                            android:adjustViewBounds="false"
+                            android:scaleType="centerCrop"
 
-                 </LinearLayout>
-                 <TextView
-                     android:textStyle="bold"
-                     android:id="@+id/txtUsername"
-                     android:layout_width="match_parent"
-                     android:layout_height="wrap_content"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            app:lottie_rawRes="@raw/covin"
+                            app:lottie_scale="5"
+                            app:lottie_speed="1"
+                            tools:ignore="ContentDescription" />
 
-                     android:fontFamily="@font/poppinsmedium"
-                     android:gravity="center"
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:gravity="center"
 
-                     android:textSize="@dimen/_12sdp"
-                     />
-                 <TextView
-                     android:id="@+id/txtOther"
-                     android:layout_width="match_parent"
-                     android:layout_height="wrap_content"
+                            android:text="@string/fetching_qr_code_from_ndhm"
+                            android:textSize="@dimen/_12sdp"
 
-                     android:fontFamily="@font/poppinsmedium"
-                     android:gravity="center"
+                            android:textStyle="bold" />
 
-                     android:textColor="@color/unicorn_black_70"
-                     android:textSize="@dimen/_10sdp"
-                     />
-                 <ImageView
-                     android:scaleType="fitXY"
-                     android:layout_margin="@dimen/_10sdp"
-                     android:id="@+id/imgQr"
-                     android:layout_gravity="center"
-                     android:layout_width="@dimen/_220sdp"
-                     android:layout_height="@dimen/_220sdp"></ImageView>
-                 <TextView
-                     android:id="@+id/txtAbhaNumber"
-                     android:layout_width="match_parent"
-                     android:layout_height="wrap_content"
+                    </LinearLayout>
 
-                     android:fontFamily="@font/poppinsmedium"
-                     android:gravity="center"
-android:textStyle="bold"
-                     android:textColor="@color/unicorn_black_70"
-                     android:textSize="@dimen/_12sdp"
-                     />
+                    <TextView
+                        android:id="@+id/txtUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinsmedium"
 
+                        android:gravity="center"
+                        android:textSize="@dimen/_12sdp"
 
-                 <LinearLayout
-                     android:gravity="center"
-                     android:orientation="horizontal"
-                     android:layout_width="match_parent"
-                     android:layout_height="wrap_content">
+                        android:textStyle="bold" />
 
-                     <com.google.android.material.button.MaterialButton
-                         android:id="@+id/btnViewAbha"
-                         android:layout_width="@dimen/_220sdp"
-                         android:layout_height="wrap_content"
-                         android:layout_gravity="center"
-                         android:layout_margin="@dimen/_10sdp"
+                    <TextView
+                        android:id="@+id/txtOther"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="@font/poppinsmedium"
+                        android:gravity="center"
+
+                        android:textColor="@color/unicorn_black_70"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <ImageView
+                        android:id="@+id/imgQr"
+                        android:layout_width="@dimen/_220sdp"
+                        android:layout_height="@dimen/_220sdp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:scaleType="fitXY"></ImageView>
+
+                    <TextView
+                        android:id="@+id/txtAbhaNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="@font/poppinsmedium"
+                        android:gravity="center"
+                        android:textColor="@color/unicorn_black_70"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
 
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnViewConsents"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/_10sdp"
 
 
-                         android:elevation="@dimen/_3sdp"
-                         android:fontFamily="@font/poppinsregular"
-                         android:text="@string/view_your_abha_card"
-                         android:textColor="?attr/colorOnPrimary" />
-                 </LinearLayout>
-
-             </LinearLayout>
-
-
-         </androidx.cardview.widget.CardView>
-         <com.google.android.material.card.MaterialCardView
-             android:id="@+id/cardShare"
-             android:visibility="gone"
-             style="?attr/materialCardViewElevatedStyle"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:layout_margin="@dimen/_10sdp"
-             app:cardBackgroundColor="?attr/colorPrimary"
-             app:cardElevation="@dimen/_5sdp">
-
-             <LinearLayout
-                 android:layout_width="match_parent"
-                 android:layout_height="@dimen/_70sdp"
-                 android:layout_margin="@dimen/_10sdp"
-                 android:orientation="horizontal">
-
-                 <LinearLayout
-
-                     android:layout_width="0dp"
-                     android:layout_height="wrap_content"
-                     android:layout_weight="0.8"
-                     android:orientation="vertical">
-
-                     <TextView
-                         android:layout_width="match_parent"
-                         android:layout_height="wrap_content"
-                         android:fontFamily="@font/poppinsmedium"
-                         android:text="@string/share_with_friends"
-                         android:textColor="@color/unicorn_white"
-                         android:textSize="@dimen/_12sdp"
-                         android:textStyle="bold" />
-
-                     <TextView
-                         android:layout_width="match_parent"
-                         android:layout_height="wrap_content"
-                         android:fontFamily="@font/poppinsregular"
-                         android:text="@string/invite_for_abha"
-                         android:textColor="@color/unicorn_white"
-                         android:textSize="@dimen/_11sdp"
-                         android:textStyle="bold" />
+                            android:elevation="@dimen/_3sdp"
+                            android:fontFamily="@font/poppinsregular"
+                            android:text="@string/consents"
+                            android:textColor="?attr/colorOnPrimary" />
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnViewAbha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/_10sdp"
 
 
-                 </LinearLayout>
-
-                 <LinearLayout
-                     android:layout_width="0dp"
-                     android:layout_height="@dimen/_70sdp"
-                     android:layout_weight="0.2"
-                     android:gravity="center"
-
-                     android:orientation="horizontal">
 
 
-                     <ImageView
+                            android:elevation="@dimen/_3sdp"
+                            android:fontFamily="@font/poppinsregular"
+                            android:text="@string/view_your_abha_card"
+                            android:textColor="?attr/colorOnPrimary" />
+                    </LinearLayout>
 
-                         android:layout_width="@dimen/_20sdp"
-                         android:layout_height="@dimen/_20sdp"
-
-                         android:src="@drawable/ic_baseline_share_24" />
-
-                 </LinearLayout>
+                </LinearLayout>
 
 
-             </LinearLayout>
-         </com.google.android.material.card.MaterialCardView>
-         <LinearLayout
+            </androidx.cardview.widget.CardView>
 
-             android:id="@+id/lvBottom"
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardShare"
+                style="?attr/materialCardViewElevatedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:visibility="gone"
+                app:cardBackgroundColor="?attr/colorPrimary"
+                app:cardElevation="@dimen/_5sdp">
 
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:orientation="horizontal">
 
-             android:orientation="vertical">
+                    <LinearLayout
 
-             <ImageView
-                 android:layout_width="@dimen/_52sdp"
-                 android:layout_height="@dimen/_52sdp"
-                 android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:orientation="vertical">
 
-                 android:src="@drawable/refrain" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="@string/share_with_friends"
+                            android:textColor="@color/unicorn_white"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
 
-             <TextView
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:layout_gravity="center"
-                 android:layout_marginLeft="@dimen/_10sdp"
-                 android:layout_marginRight="@dimen/_10sdp"
-                 android:layout_marginBottom="@dimen/_20sdp"
-                 android:fontFamily="@font/poppinsregular"
-                 android:gravity="center"
-                 android:includeFontPadding="false"
-                 android:text="@string/tncdata"
-                 android:textColor="@color/unicorn_black_70"
-                 android:textSize="@dimen/_9sdp" />
-         </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinsregular"
+                            android:text="@string/invite_for_abha"
+                            android:textColor="@color/unicorn_white"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold" />
 
-     </LinearLayout>
- </androidx.core.widget.NestedScrollView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+
+                            android:src="@drawable/ic_baseline_share_24" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+
+                android:id="@+id/lvBottom"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_52sdp"
+                    android:layout_height="@dimen/_52sdp"
+                    android:layout_gravity="center"
+
+                    android:src="@drawable/refrain" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/tncdata"
+                    android:textColor="@color/unicorn_black_70"
+                    android:textSize="@dimen/_9sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 
     <com.google.android.material.progressindicator.LinearProgressIndicator
         android:id="@+id/progressBar"

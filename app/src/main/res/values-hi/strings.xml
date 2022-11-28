@@ -184,5 +184,10 @@
     <string name="invite_for_abha">अपने मित्रों को उनकी आभा आईडी बनाने के लिए ProAcDoc पर आमंत्रित करें</string>
 
     <string name="fetching_abha_code_from_ndhm">एनडीएचएम से आभा कार्ड लाया जा रहा है</string>
+    <string name="sync_with_google_fit">गूगल फिट के साथ सिंक करें</string>
+    <string name="sync_now">सिंक करें</string>
+  <string name="it_helps_you_to_track_daily_steps_calory_counts_heart_rate_measurements_directly_from_wereable_devices">यह आपको स्मार्ट घड़ियों, बैंड उपकरणों से सीधे दैनिक कदम, कैलोरी काउंट, हृदय गति मापन को ट्रैक करने में मदद करता है।</string>
+    <string name="consents">सहमति</string>
+    <string name="fetching_consents_from_abha">हम ABHA से अनुमोदन प्राप्त कर रहे हैं</string>
 
 </resources>

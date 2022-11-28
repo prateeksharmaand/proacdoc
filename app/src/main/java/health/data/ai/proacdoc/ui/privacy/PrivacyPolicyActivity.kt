@@ -73,7 +73,7 @@ class PrivacyPolicyActivity : AppCompatActivity() {
                 return true
             }
         }
-        webView.loadUrl("https://pages.flycricket.io/aayussmaan-bhaart-aabhaa-p/privacy.html")
+        webView.loadUrl("https://pages.flycricket.io/proacdoc-0/privacy.html")
 
 
 

@@ -178,6 +178,11 @@
   <string name="invite_for_abha">Invite your friend to ProAcDoc to create their ABHA ID</string>
 
   <string name="fetching_abha_code_from_ndhm">Fetching ABHA Card From NDHM</string>
+    <string name="sync_with_google_fit">Sync With Google Fit</string>
+    <string name="sync_now">Sync Now</string>
+    <string name="it_helps_you_to_track_daily_steps_calory_counts_heart_rate_measurements_directly_from_wereable_devices">It helps you to track daily Steps, Calory Counts, Heart Rate Measurements directly from Wereable devices.</string>
+    <string name="consents">Consents</string>
+    <string name="fetching_consents_from_abha">Fetching Consents From ABHA</string>
     <array name="details">
     <item>Name</item>
     <item>Type</item>

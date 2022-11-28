@@ -197,6 +197,12 @@
         <activity
             android:name="health.data.ai.proacdoc.ui.healthbot.HealthbotwebActivity"
             android:exported="false" />
+        <activity
+            android:name="health.data.ai.proacdoc.ui.abhaconsents.AbhaConsentsActivity"
+            android:exported="false" />
+
+
+
         <activity android:name="health.data.ai.proacdoc.ui.createabhaaadharactivity.CreateAbhaAdharActivity" android:exported="false"/>
         <activity android:name="health.data.ai.proacdoc.ui.createabhamobileactivity.CreateAbhaMobileActivity"  android:exported="false" />
         <activity android:name="health.data.ai.proacdoc.ui.registerabhaactivity.CreateAbhaActivity"  android:exported="false" />

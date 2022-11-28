@@ -27,6 +27,7 @@ import health.care.ai.proacdoc.R
 import health.care.ai.proacdoc.databinding.ActivityAbhaProfileBinding
 import health.data.ai.proacdoc.api.models.abhausertoken.AbhaUserTokenRequest
 import health.data.ai.proacdoc.application.MainApp
+import health.data.ai.proacdoc.ui.abhaconsents.AbhaConsentsActivity
 import health.data.ai.proacdoc.ui.createabhaaadharactivity.AbhaViewModel
 import health.data.ai.proacdoc.ui.createabhaaadharactivity.CreateAbhaAdharActivity
 import health.data.ai.proacdoc.ui.login.LoginViewModel
@@ -86,6 +87,13 @@ class ABHProfileActivity : AppCompatActivity() {
             }
             startActivity(Intent.createChooser(sendIntent, null))
         })
+
+        binding.btnViewConsents.setOnClickListener(View.OnClickListener {
+
+            val intent = Intent(this, AbhaConsentsActivity::class.java)
+            startActivity(intent)
+        })
+
 
 
     }

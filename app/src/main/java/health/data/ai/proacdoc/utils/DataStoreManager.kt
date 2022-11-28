@@ -19,6 +19,7 @@
 package health.data.ai.proacdoc.utils
 
 import android.content.Context
+import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.intPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
@@ -99,6 +100,19 @@ class DataStoreManager(private val context: Context) {
         get() = context.dataStore.data.map { preferences ->
             preferences[abhaUserToken] ?: "0"
         }
+
+
+
+    suspend fun setisGoogleFitLinked(type: Boolean) {
+        context.dataStore.edit { preferences ->
+            preferences[isGoogleFitLinked] = type
+        }
+    }
+
+    val getisGoogleFitLinked: Flow<Boolean>
+        get() = context.dataStore.data.map { preferences ->
+            preferences[isGoogleFitLinked] ?: false
+        }
     companion object {
         private const val DATASTORE_NAME = "nearmedb"
 
@@ -108,6 +122,7 @@ class DataStoreManager(private val context: Context) {
         private val txnId = stringPreferencesKey("txnId");
         private val abhaUserToken = stringPreferencesKey("abhaUserToken");
         private val beniId = intPreferencesKey("beniId");
+        private val isGoogleFitLinked = booleanPreferencesKey("isGoogleFitLinked");
         private val Context.dataStore by preferencesDataStore(
             name = DATASTORE_NAME
         )

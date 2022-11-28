@@ -28,6 +28,7 @@ package health.data.ai.proacdoc.api
 import health.care.ai.proacdoc.BuildConfig
 import health.data.ai.proacdoc.api.models.Order.PostOrder.OrderRequest
 import health.data.ai.proacdoc.api.models.Order.PostOrder.OrderResponse
+import health.data.ai.proacdoc.api.models.abhaconsentdetails.AbhaConsentListResponse
 import health.data.ai.proacdoc.api.models.abhatoken.AbhaTokenModel
 import health.data.ai.proacdoc.api.models.abhausertoken.AbhaUserTokenRequest
 import health.data.ai.proacdoc.api.models.abhausertoken.AbhaUserTokenresponse
@@ -261,6 +262,14 @@ interface PostsServices {
     @Headers("Accept: application/json")
     @GET(BuildConfig.abha_getAbhaCard)
     suspend fun GetAbhaUserCard( @Header("Authorization") token:String,@Header("X-Token") xToken:String,): Response<ResponseBody>
+
+
+    @Headers("Accept: application/json")
+    @GET(BuildConfig.abha_getConsent_by_type)
+    suspend fun getConsentsByType(@Query("status") status:String, @Header("Authorization") token:String,@Header("X-Auth-Token") xToken:String,): Response<AbhaConsentListResponse>
+
+
+
 
 
 }

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?><!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Created by Efendi Hariyadi on 21/07/22, 2:56 PM
+  ~ Copyright (c) 2022 . All rights reserved.
+  ~ Last modified 08/07/22, 3:28 PM
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/pending"
+        android:icon="@drawable/ic_baseline_pending_actions_24"
+        android:title="Pending" />
+    <item
+        android:id="@+id/granted"
+        android:icon="@drawable/ic_baseline_verified_user_24"
+        android:title="Granted" />
+    <item
+        android:id="@+id/denied"
+        android:icon="@drawable/ic_baseline_desktop_access_disabled_24"
+        android:title="Denied" />
+    <item
+        android:id="@+id/expired"
+        android:icon="@drawable/ic_baseline_free_cancellation_24"
+        android:title="Expired" />
+
+
+</menu>
